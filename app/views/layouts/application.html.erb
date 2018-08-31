@@ -13,7 +13,7 @@
   <body>
 
     <header id="main_navigation" class="clearfix">
-        <a href = "#" class="name">Janet Hamrani</a>
+        <%= link_to "Janet Hamrani", root_path, class: "name" %>
         <nav>
           <%= link_to "Articles", posts_path %>
           <a href="#">Projects</a>
@@ -22,5 +22,14 @@
     </header>
 
     <%= yield %>
+
+    <footer id="main_footer">
+      <p class="copyright">© 2018 Janet Hamrani</p>
+      <nav>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </nav>
+    </footer>
   </body>
 </html>
