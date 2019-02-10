@@ -1,4 +1,6 @@
 @import 'normalize.css.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 //variables
 $dark: #424652;
 $light: #9a9da4;
@@ -35,6 +37,7 @@ body{
 #main_navigation{
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
+  background-color: #faebd7;
 }
 .clearfix:before, .clearfix:after{
   content: " ";
@@ -98,7 +101,7 @@ hr {
   font-size: .85em;
   letter-spacing: 4px;
   text-transform: uppercase;
-  border: 2px solid $border;
+  border: 2px solid #A9A9A9;
   padding:  1rem;
   text-decoration: none;
   color: $dark;
@@ -113,6 +116,8 @@ nav{
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+
 
   }
 }

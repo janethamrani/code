@@ -13,14 +13,14 @@
   <body>
 
     <header id="main_navigation" class="clearfix">
-        <%= link_to "Janet Hamrani", root_path, class: "name" %>
+        <%= link_to "Teen Bizz", root_path, class: "name" %>
         <nav>
-          <%= link_to "Articles", posts_path %>
-          <%= link_to "Projects", projects_path %>
+          <%= link_to "Lifestyle", posts_path %>
+          <%= link_to "Beauty", projects_path %>
           <%= link_to "Contact", new_contact_path %>
           <% if user_signed_in? %>
             <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-          <% end %> 
+          <% end %>
         </nav>
     </header>
     <% if notice %>
