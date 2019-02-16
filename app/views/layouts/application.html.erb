@@ -15,9 +15,10 @@
     <div id="trending">
     <img id = "newest"src = "https://www.rollingstone.com/wp-content/uploads/2019/02/areathatrib.jpg?crop=900:600&width=440">
     <% @posts.each do |post| %>
-    <h3 id = "newest_title"><a href="#"><%= link_to post.title, post %></a></h3>
-    <p class="date"><%= post.created_at.strftime("%A, %b %d") %> </p>
-    <% end %>
+      <h3 id = "newest_title"><a href="#"><%= link_to post.title, post %></a></h3>
+      <p class="date"><%= post.created_at.strftime("%A, %b %d") %> </p>
+      <% end %>
+
 </div>
     <header id="main_navigation" class="clearfix">
         <%= link_to "teenBizz", root_path, class: "name" %>
@@ -39,7 +40,7 @@
     <%= yield %>
 
     <footer id="main_footer">
-      <p class="copyright">© 2018 Janet Hamrani</p>
+      <p class="copyright">© 2019 Teen Bizz</p>
       <nav>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
