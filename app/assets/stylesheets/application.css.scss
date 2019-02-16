@@ -1,5 +1,7 @@
 @import 'normalize.css.scss';
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
 
 //variables
 $dark: #424652;
@@ -18,6 +20,24 @@ body{
   font-family: 'Raleway', sans-serif;
 
 }
+#newest {
+  height: 700px;
+  width: 100%;
+}
+#newest_title {
+    position: absolute;
+     background: rgba(255, 255, 255, 0.8);
+     width: 60%;
+     text-align: center;
+     top: 70%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 5em;
+     font-family: 'PT Sans', sans-serif;
+
+
+}
+
 .wrapper{
   width: 90%;
   margin: 0 auto;
