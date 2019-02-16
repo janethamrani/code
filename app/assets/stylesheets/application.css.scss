@@ -1,6 +1,12 @@
 @import 'normalize.css.scss';
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+
+
 
 
 //variables
@@ -14,16 +20,43 @@ $white: #FFFFFF;
   box-sizing: border-box;
 }
 
+#logo_first, #logo_second {
+  font-weight: 800;
+  font-size: 2em;
+  letter-spacing: 1.2px;
+  font-family: 'Playfair Display', serif;
+  padding-left: 10px;
+  font-size: 20px;
 
+  text-decoration: none;
+  float: left;
+  position: absolute;
+}
+#logo_first {
+  font-weight: 2;
+  color: white;
+  font-style: italic;
+
+}
+#logo_second {
+  font-weight: 1000;
+
+  color: #ea65b7;
+  font-style: italic;
+  margin-top: 21px;
+  margin-left: 46px;
+}
 
 body{
   font-family: 'Raleway', sans-serif;
 
 }
+
 #newest {
   height: 700px;
   width: 100%;
 }
+
 #newest_title {
     position: absolute;
      background: rgba(255, 255, 255, 0.8);
@@ -39,12 +72,24 @@ body{
 
      a {
        text-decoration: none;
-       color: #282828;
+       color: #ea65b7;
        font-weight: 100;
+
+
      }
 
 
 }
+.date {
+  margin: 0;
+  position: absolute;
+  top: 91%;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+
+}
+
 
 .wrapper{
   width: 90%;
@@ -63,9 +108,10 @@ body{
 
 
 #main_navigation{
-  padding: 2.5em 5%;
+  padding: 10px;
   border-bottom: 1px solid $border;
-  background-color: #faebd7;
+  border-top: 1px solid $border;
+  background-color: #FFFFFF;
   text-decoration: none;
 }
 .clearfix:before, .clearfix:after{
@@ -129,28 +175,29 @@ hr {
 }
 
 .name {
-  font-weight: 700;
-  font-size: .85em;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  border: 2px solid #A9A9A9;
+  font-weight: 800;
+  font-size: 2em;
+  letter-spacing: 1.2px;
+  font-family: 'Playfair Display', serif;
   padding:  1rem;
   text-decoration: none;
-  color: $dark;
   float: left;
+  color: #ea65b7;
+
+
 }
 
 
 nav{
-  float: right;
-  padding-top: 1.5rem;
+  float: left;
+  padding-top: 1.7rem;
 
   a {
     color: $dark;
     text-decoration: none;
     margin: 0 1rem;
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-family: 'Lora', serif;
 
 
   }
