@@ -4,6 +4,8 @@
     <h1><%= @post.title %></h1>
     <hr>
   </header>
+
+<%= image_tag @post.image.url(:large) %>
 <div id="content">
   <%= markdown @post.content %>
 </div>
