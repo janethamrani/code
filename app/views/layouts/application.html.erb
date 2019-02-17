@@ -13,7 +13,12 @@
   <body>
     <h3 id="logo_first">teen</h3> <h3 id="logo_second">Bizz</h3>
     <div id="trending">
-      
+      <% @posts.each do |post| %>
+        <%= image_tag post.image.url(:large), :style => 'width: 100%; padding-bottom: 10px;' %>
+        <h3 id = "newest_title"><a href="#"><%= link_to post.title, post %></a></h3>
+        <p class="date"><%= post.created_at.strftime("%A, %b %d") %> </p>
+       <% end %>
+
 
 
 </div>
