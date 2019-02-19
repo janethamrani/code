@@ -1,10 +1,13 @@
 <div id="post_show_content" class="skinny_wrapper wrapper_padding">
   <header>
+  <%= image_tag @post.image.url(:large), :style => 'width: 100%; height: 300px; display: block; margin-left: auto; margin-right: auto;  filter: blur(3px);' %>
 
-    <p class="date"><%= @post.created_at.strftime("%A, %B %d") %></p>
-    <%= image_tag @post.image.url(:large), :style => 'width: 100%; padding-bottom: 10px;' %>
 
     <h1><%= @post.title %></h1>
+      <p id="date_post"><%= @post.created_at.strftime("%A, %B %d") %></p>
+
+
+
     <hr>
   </header>
 

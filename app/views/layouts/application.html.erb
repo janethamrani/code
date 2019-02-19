@@ -11,19 +11,15 @@
   </head>
 
   <body>
-    <h3 id="logo_first">teen</h3> <h3 id="logo_second">Bizz</h3>
-    <div id="trending">
-      <% @posts.each do |post| %>
-        <%= image_tag post.image.url(:large), :style => 'width: 100%; padding-bottom: 10px;' %>
-        <h3 id = "newest_title"><a href="#"><%= link_to post.title, post %></a></h3>
-        <p class="date"><%= post.created_at.strftime("%A, %b %d") %> </p>
-       <% end %>
 
 
 
-</div>
-    <header id="main_navigation" class="clearfix">
-        <%= link_to "teenBizz", root_path, class: "name" %>
+
+     <%= link_to "teenBizz", root_path, class: "name" %>
+     <img id="img_logo" src="http://i66.tinypic.com/103zrbp.png">
+
+     <header id="main_navigation" class="clearfix">
+       <img id="main_img" src = "http://i67.tinypic.com/eryhhg.jpg">
         <nav>
           <%= link_to "Lifestyle", posts_path %>
           <%= link_to "Beauty", projects_path %>
@@ -32,7 +28,9 @@
             <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
           <% end %>
         </nav>
+
     </header>
+
     <% if notice %>
       <p class="notice"> <%= notice %> </p>
     <% elsif alert %>

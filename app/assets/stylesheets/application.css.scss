@@ -8,30 +8,43 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 
-
-
-
-
-
-
 //variables
 $dark: #424652;
 $light: #9a9da4;
-$highlight: #ea65b7;
+$highlight: #E27E8A;
 $border: #e9e9e9;
 $white: #FFFFFF;
 
 * {
   box-sizing: border-box;
+
 }
 
-#logo_first, #logo_second {
+#main_img {
+  margin-bottom: 0;
+  width: 100%;
+  height: 320px;
+}
+
+#img_logo {
+  position: absolute;
+  width: 60%;
+  padding: 20px;
+  top: 40%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+
+}
+.name {
   font-weight: 800;
   font-size: 2em;
   letter-spacing: 1.2px;
   font-family: 'Playfair Display', serif;
   padding-left: 10px;
   font-size: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+  color: $highlight;
 
   text-decoration: none;
   float: left;
@@ -57,34 +70,29 @@ body{
 
 }
 
-#newest {
-  height: 700px;
-  width: 100%;
-}
 
-#newest_title {
+#newest_side {
+  h3{
     position: absolute;
-     background: rgba(255, 255, 255, 0.8);
-     width: 60%;
-     text-align: center;
-     top: 70%;
-     text-decoration: none;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     font-size: 5em;
-     font-family: 'PT Sans', sans-serif;
-     text-transform: uppercase;
-
+    background: rgba(255, 255, 255, 0.9);
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    top: 80%;
+    text-decoration: none;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
      a {
        text-decoration: none;
        color: $highlight;
        font-weight: 100;
-
-
      }
-
-
+  }
 }
+
 .date {
   margin: 0;
   position: absolute;
@@ -92,10 +100,7 @@ body{
   color: white;
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
-
 }
-
-
 .wrapper{
   width: 90%;
   margin: 0 auto;
@@ -112,13 +117,7 @@ body{
 }
 
 
-#main_navigation{
-  padding: 10px;
-  border-bottom: 1px solid $border;
-  border-top: 1px solid $border;
-  background-color: #FFFFFF;
-  text-decoration: none;
-}
+
 .clearfix:before, .clearfix:after{
   content: " ";
   display: table;
@@ -179,33 +178,35 @@ hr {
   margin: 2rem 0;
 }
 
-.name {
-  font-weight: 800;
-  font-size: 2em;
-  letter-spacing: 1.2px;
-  font-family: 'Playfair Display', serif;
-  padding:  1rem;
-  text-decoration: none;
-  float: left;
-  color: $highlight;
-
-
-}
-
 
 nav{
-  float: left;
-  padding-top: 1.7rem;
+  padding-top: 20px;
+  margin-top: -10px;
+  padding-bottom: 1.7rem;
+  border-top: 1px solid $border;
+  background-color: black;
+  position: sticky;
+  scroll-behavior: smooth;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+
+
+
 
   a {
-    color: $dark;
+    color: white;
     text-decoration: none;
     margin: 10rem 1rem 1rem;
     font-size: 22px;
-
     letter-spacing: 2px;
     font-family: 'Open Sans Condensed', sans-serif;
     text-transform: uppercase;
+    a:hover {
+      color: pink;
+    }
+
 
 
   }
@@ -222,6 +223,8 @@ nav{
 #main_footer{
   padding: 2.5em 5%;
   border-top: 1px solid $border;
+  background-color: black;
+  padding-bottom: 12.5em;
   .copyright {
     float: left;
     font-size: .9em;

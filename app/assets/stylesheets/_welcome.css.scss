@@ -1,3 +1,4 @@
+
 .col-1, .col-2, .col-3{
   float: left;
 }
@@ -9,6 +10,15 @@
   width: 27.5%;
   padding: 0 2.5%;
 }
+
+.feed {
+  margin-bottom: 500px;
+  hr {
+    width: 100%;
+      border-top: 2px solid $light;
+  }
+}
+
 .homepage_content{
   h2{
     font-size: 1.1rem;
@@ -30,7 +40,7 @@
   }
   .date{
     font-size: .85em;
-    margin-bottom: 2em;
+    margin-bottom: 10px;;
     color: $light;
   }
   p{

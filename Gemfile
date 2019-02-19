@@ -18,6 +18,8 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 4.2'
 gem "paperclip", "~> 6.0.0"
+gem 'ckeditor', '~> 4.1'
+
 
 
 group :development, :test do
