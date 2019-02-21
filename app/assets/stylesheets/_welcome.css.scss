@@ -1,4 +1,88 @@
 
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+h3 {
+  font-family: 'Muli', sans-serif;
+  text-transform: uppercase;
+}
+
+.image_catalog{
+  border-color: $highlight;
+  border-style: dashed;
+  border-width: 2px 2px 0px 2px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+
+}
+
+.title_catalog{
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+  border-color: $highlight;
+  border-style: dashed;
+  border-width: 0px 2px 2px 2px;
+  flex-direction: row;
+
+  a {
+    position: absolute;
+
+    text-align: center;
+    text-decoration: none;
+    color: $dark;
+    font-family: 'Slabo 27px', serif;
+    //background: rgba($highlight, 0.5);
+    //padding-left: 10px;
+    //padding-right: 10px;
+    width: 290px;
+    margin-left: 5px;
+
+  }
+
+  a:hover {
+    color: $highlight;
+  }
+  h3 {
+  padding-left: 7px;
+  padding-right: 20px;
+  margin-left: 4.5px;
+  width: 300px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+
+
+  display: flex;
+  text-align: center;
+}
+
+}
+
+
+
+
+
+
+
+
+
+.home_image:hover{
+  opacity: 0.6;
+}
+
+
+
+
 .col-1, .col-2, .col-3{
   float: left;
 }

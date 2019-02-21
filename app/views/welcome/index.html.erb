@@ -7,7 +7,7 @@
  </div>
 <%end%> -->
 <div class="wrapper wrapper_padding clearfix">
-  <div class="col-1 about homepage_content">
+  <!--<div class="col-1 about homepage_content">
     <h2>About</h2>
     <hr>
     <p>There are many variations of passages of Lorem Ipsum <a href="#">available</a></p>
@@ -18,7 +18,25 @@
       <p>There are many variations of passages of Lorem Ipsum available,
         but the majority have suffered
       </p>
+  </div> -->
+  <h3>new posts</h3>
+  <div class="image_catalog">
+
+    <% @posts.each do |post| %>
+      <%= link_to post do %>
+        <%= image_tag (post.image.url(:thumb)), :style => 'width: 310px; height: 200px; padding-left: 10px;padding-right:10px;', class: "home_image" %>
+      <% end %>
+    <% end %>
+
   </div>
+  <div class="title_catalog">
+    <% @posts.each do |post| %>
+    <h3><a href="#"><%= link_to post.title, post %></a></h3>
+    <% end %>
+
+  </div>
+
+
 
   <div class="col-2 homepage_content">
     <h2>Stuff I've written</h2>
