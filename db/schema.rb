@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_19_034800) do
+ActiveRecord::Schema.define(version: 2019_02_21_235241) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "ckeditor_assets", force: :cascade do |t|
     t.string "data_file_name", null: false
@@ -47,6 +53,7 @@ ActiveRecord::Schema.define(version: 2019_02_19_034800) do
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
+    t.integer "category_id"
     t.index ["slug"], name: "index_posts_on_slug", unique: true
   end
 
