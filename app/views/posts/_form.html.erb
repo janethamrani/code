@@ -7,13 +7,14 @@
       <% end %>
     </ul>
   <% end %>
-
-  <%= f.label :image %> <br>
+  <%= f.label :category_id, "Choose a Category" %> <br><br>
+<%= f.collection_select(:category_id, Category.all, :id, :name) %><br><br>
+  <%= f.label :image, "Upload a thumbnail image" %> <br><br>
   <%= f.file_field :image %>
+  <br> <br>
   <br>
-  <br>
-  <%= f.label :title %> <br>
-  <%= f.text_field :title %>
+  <%= f.label :title, "Enter the post title" %><br>
+    <%= f.text_field :title %><br>
   <br>
   <br>
 
