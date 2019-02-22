@@ -180,17 +180,28 @@ hr {
 
 
 nav{
+  list-style-type: none;
   padding-top: 20px;
   margin-top: -10px;
   padding-bottom: 1.7rem;
   border-top: 1px solid $border;
   background-color: black;
+  display: flex;
+  flex-direction: row;
   position: sticky;
-  scroll-behavior: smooth;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   text-decoration: none;
-  text-align: center;
+  padding-left: 15em;
+  li{
+    text-align: center;
+
+
+
+  }
+  li:hover{
+
+  }
 
 
 
@@ -224,7 +235,7 @@ nav{
   padding: 2.5em 5%;
   border-top: 1px solid $border;
   background-color: black;
-  padding-bottom: 12.5em;
+  padding-bottom: 15.2em;
   .copyright {
     float: left;
     font-size: .9em;

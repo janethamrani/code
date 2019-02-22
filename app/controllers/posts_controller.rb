@@ -1,7 +1,12 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
   def index
-    @posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page:16)
+    if params[:category].blank?
+      @posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page:16)
+    else
+      @category_id = Category.find_by(name: params[:category]).id
+      @posts = Post.where(category_id: @category_id).order("created_at DESC")
+  end
   end
 
   def new
