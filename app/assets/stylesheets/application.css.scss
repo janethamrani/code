@@ -11,7 +11,7 @@
 //variables
 $dark: #424652;
 $light: #9a9da4;
-$highlight: #E27E8A;
+$highlight: #ff9eb5;
 $border: #e9e9e9;
 $white: #FFFFFF;
 
@@ -27,24 +27,44 @@ $white: #FFFFFF;
 }
 
 #img_logo {
+  font-family: monospace;
   position: absolute;
   width: 60%;
   padding: 20px;
-  top: 40%;
+  color: black;
+  //background-color: gray;
+  top: 30%;
   left: 55%;
   transform: translate(-50%, -50%);
 
+}
+#img_overlay {
+  font-family: monospace;
+  position: absolute;
+
+  width: 60%;
+  padding: 20px;
+  color: white;
+  top: 30%;
+  left: 55.5%;
+  transform: translate(-50%, -50%);
+  a {
+    text-decoration: none;
+    color: white;
+
+  }
 }
 .name {
   font-weight: 800;
   font-size: 2em;
   letter-spacing: 1.2px;
-  font-family: 'Playfair Display', serif;
+  font-family: monospace;
   padding-left: 10px;
   font-size: 20px;
   margin-top: 8px;
   margin-left: 8px;
-  color: $highlight;
+  color: $dark;
+  font-weight: 600;
 
   text-decoration: none;
   float: left;
@@ -174,7 +194,7 @@ hr {
   display: block;
   height: 2px;
   border: 0;
-  border-top: 2px solid $highlight;
+  border-top: 2px solid $light;
   margin: 2rem 0;
 }
 
@@ -199,8 +219,8 @@ nav{
 
 
   }
-  li:hover{
-
+  li:hover {
+    color: $highlight;
   }
 
 

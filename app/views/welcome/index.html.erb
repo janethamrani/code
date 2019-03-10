@@ -19,7 +19,7 @@
         but the majority have suffered
       </p>
   </div> -->
-  <h3>trending</h3>
+
   <div class="image_catalog">
 
     <% @posts.each do |post| %>
@@ -35,21 +35,31 @@
     <% end %>
 
   </div>
+  <h3 class="title"> trending </h3>
+  <hr>
+<div class="recent_posts">
+  <div id="posts_wrapper" class="skinny_wrapper">
 
-
-
-  <div class="col-2 homepage_content">
-    <h2>Stuff I've written</h2>
-    <hr>
-  </div>
-
-  <div class="col-3 homepage_content">
-    <h2>Stuff I've Built</h2>
-    <hr>
-    <% @projects.each do |project| %>
-    <h3><a href="#"><%= link_to project.title, project %></a></h3>
-    <p class="date"><%= project.created_at.strftime("%A, %b %d") %> </p>
+<% @number = 0 %>
+  <% Post.all.([3...8]).order("created_at DESC") do |post| %>
+    <div class="post">
+    <p class="date_trending"><%= post.created_at.strftime('%A, %B %d') %></p>
+    <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
+    <%= image_tag (post.image.url(:large)), class: "posts_show_img" %>
+    <% post.category_id do |category| %>
+    <li>
+    <%= link_to category.name, posts_path(category: category.name) %>
+    </li>
+    <% @number += 1 %>
     <% end %>
 
   </div>
+
+<% end %>
+
+  </div>
+
+
+</div>
+
 </div>

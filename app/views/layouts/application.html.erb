@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Janet Hamrani</title>
+    <title>urbanthropology</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -14,11 +14,11 @@
 
 
 
-     <%= link_to "teenBizz", root_path, class: "name" %>
-     <img id="img_logo" src="http://i66.tinypic.com/103zrbp.png">
-
+  <!--   <%= link_to "urbanthropology", root_path, class: "name" %>-->
+     <h3 id="img_logo">urbanthropology</h3>
+     <h3 id="img_overlay"><%= link_to "urbanthropology", root_path%></h3>
      <header id="main_navigation" class="clearfix">
-       <img id="main_img" src = "http://i67.tinypic.com/eryhhg.jpg">
+       <img id="main_img" src = "https://lh3.googleusercontent.com/EgBUJSe04fiGXQUzxA67hXUNl1NR1_s0svy7Fu6n06YyhdCbOWVhFjFsyqHNhG9GHnDip80qS6tPphUJ2AV3HQfHc3w-KPJNBoQdl6LE4RY3dKIlDgLoNa3wXEK2qkuENjGrDBarlS7Bj0-ibAYHV-diVucJN5DtcW4Hcl_31lzK1td4PqWkokfoQIWMLy5l24SR1VNpMui_XglZip7ETImDOudSyBH2nM1ljayh0Nu__Qkwc9WNOnYANyJ6cA5gvUz4wakV67mka4kCDcOtXNpHGJbDx4aZiiX4GsdpDQI4YJO9YSrRrvG5GRmo1nmglVGxlpIpRzu2iclGB8lvyqw6pMSIJgts6DLOqZSMouS-tfDwXd3scaPLT6bLxHKgz02qLc7Iva-9kbrMqRY5qNczsiyI6mOct9yZnJ3sHmmOgEQc5NTPMLKKBpnboQC4UjUZZGBsEhTwQw8ZYI8u5W1lV6uh8AYO7C9zw8AuMG1fx3Lofr0Hz4UR0EVUbhljVUFgRbOqMCxlgtElnJln12yAmstuGg5f-9KNVESzHgCrmRr3D-Bl_KOPNnIpJjLsOFEHKjxfztWPcZ-0mLdYJH3xfG-w4jCIDitdCBcgfEoD5XeEp9h6fIt_0m3GPZlncxD99rtPQH85H1CI3ySwfsnlBVCKWP4=w528-h352-no">
         <nav>
           <% Category.all.each do |category| %>
           <li>
@@ -45,7 +45,7 @@
     <%= yield %>
 
     <footer id="main_footer">
-      <p class="copyright">© 2019 Teen Bizz</p>
+      <p class="copyright">© 2019 Urbanthropology</p>
       <nav>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>

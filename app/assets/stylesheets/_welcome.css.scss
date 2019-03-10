@@ -2,26 +2,35 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 @import url('https://fonts.googleapis.com/css?family=Muli');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+
 
 
 h3 {
-  font-family: 'Poiret One', cursive;
-  text-transform: uppercase;
-  text-align: center;
+  font-family: 'Satisfy', cursive;
+  text-transform: lowercase;
+  text-align: left;
   font-size: 50px;
+  color: $highlight;
   padding-top: 20px;
   letter-spacing: 3px;
+}
+
+hr{
+  width: 100%;
 }
 
 .image_catalog{
 //  border-color: $highlight;
 //  border-style: dashed;
-  //border-width: 2px 2px 0px 2px;
+  border-width: 2px 2px 0px 2px;
   padding-left: 10px;
   margin-left: 90px;
   margin-right: 90px;
   padding-right: 10px;
-//  padding-top: -100px;
+  padding-top: -100px;
 
 
 
@@ -51,7 +60,7 @@ h3 {
     text-decoration: none;
     color: $dark;
     letter-spacing: normal;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
     //background: rgba($highlight, 0.5);
     //padding-left: 10px;
@@ -83,7 +92,13 @@ h3 {
 }
 
 
+.recent_posts{
 
+  .date_trending{
+    color: $highlight;
+    position: absolute;
+  }
+}
 
 
 
@@ -140,6 +155,8 @@ h3 {
     font-size: .85em;
     margin-bottom: 10px;;
     color: $light;
+    display: flex;
+
   }
   p{
     margin: 0 0 1em 0;
