@@ -2,8 +2,7 @@ class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
   def index
     if params[:category].blank?
-      @posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page:16)
-      @posts_index = Post.all.[3...8].order("created_at DESC")
+      @posts = Post.all.order("created_at desc")
     else
       @category_id = Category.find_by(name: params[:category]).id
       @posts = Post.where(category_id: @category_id).order("created_at DESC")

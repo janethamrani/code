@@ -20,9 +20,20 @@
       </p>
   </div> -->
 
+  <% filteredPosts = [] %>
+  <!--filtered posts are supposed to be approved -->
+  <% Post.all.order("created_at desc").each do |post| %>
+    <% filteredPosts.push post %>
+  <% end %>
+
+ <div class="featured_img">
+   <%= link_to filteredPosts[0] do %>
+     <%= image_tag (filteredPosts[0].image.url(:large)), :style => 'width: 50%; display: center; height: 800px; margin-top: -31px; margin-left: -70px;', class: "featured_img" %>
+ <% end %>
+ </div>
   <div class="image_catalog">
 
-    <% @posts.each do |post| %>
+    <% filteredPosts[1..3].each do |post| %>
       <%= link_to post do %>
         <%= image_tag (post.image.url(:thumb)), :style => 'width: 310px; height: 200px; padding-left: 10px;padding-right:10px;', class: "home_image" %>
       <% end %>
@@ -30,7 +41,7 @@
 
   </div>
   <div class="title_catalog">
-    <% @posts.each do |post| %>
+    <% filteredPosts[1..3].each do |post| %>
     <h3><a href="#"><%= link_to post.title, post %></a></h3>
     <% end %>
 
@@ -40,22 +51,26 @@
 <div class="recent_posts">
   <div id="posts_wrapper" class="skinny_wrapper">
 
-<% @number = 0 %>
-  <% Post.all.([3...8]).order("created_at DESC") do |post| %>
-    <div class="post">
-    <p class="date_trending"><%= post.created_at.strftime('%A, %B %d') %></p>
-    <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
-    <%= image_tag (post.image.url(:large)), class: "posts_show_img" %>
-    <% post.category_id do |category| %>
-    <li>
-    <%= link_to category.name, posts_path(category: category.name) %>
-    </li>
-    <% @number += 1 %>
+
+
+  <% filteredPosts[4..-1].each do |post| %>
+      <div class="post">
+      <p class="date_trending"><%= post.created_at.strftime('%A, %B %d') %></p>
+      <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
+      <%= image_tag (post.image.url(:large)), class: "posts_show_img" %>
+      <% post.category_id do |category| %>
+      <li>
+      <%= link_to category.name, posts_path(category: category.name) %>
+      </li>
     <% end %>
+
+
+
 
   </div>
 
 <% end %>
+
 
   </div>
 
