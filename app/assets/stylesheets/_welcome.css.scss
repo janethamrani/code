@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text');
+
 
 
 
@@ -12,17 +14,27 @@
   position: absolute;
   text-align: center;
   margin-left: -50px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: #8B008B;
+  border-width: 5px;
+
   h5{
     margin-top: 3px;
     width: 200px;
-    margin-left: 30px;
-    font-family: 'Lato', sans-serif;
+    margin-left: 35px;
+    font-family: 'Markazi Text', serif;
+    padding-bottom: 10px;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+
+
 
   }
   a {
     text-decoration: none;
     width: 100px;
-    color: #ff598f;
+    color: $dark;
   }
 }
 
@@ -43,11 +55,10 @@ hr{
 }
 #main_hdr {
   padding: 40px;
-  margin-top: -20px;
-
+  margin-top: 10px;
   color: #000000;
   font-size: 40px;
-  margin-left: 105px;
+  margin-left: 120px;
 
 
   h3 {
@@ -55,10 +66,11 @@ hr{
     border-style: solid;
     border-color: #6ed3cf;
     border-width: 5px;
-    padding: 40px;
-    width: 575px;
+    margin-left: 105px;
+    margin-top: -45px;
+    width: 600px;
 
-    height: 280px;
+    height: 334px;
   }
   a{
     font-family: 'Playfair Display', serif;
@@ -68,9 +80,10 @@ hr{
     text-decoration: none;
     color: #9068be;
   }
+
 }
 
-#main_hdr h3:hover{
+#main_hdr a:hover{
   color: $dark;
 }
 
@@ -78,14 +91,13 @@ hr{
 
 
 .image_catalog{
-//  border-color: $highlight;
-//  border-style: dashed;
-  border-width: 2px 2px 0px 2px;
-  padding-left: 10px;
-  margin-left: 90px;
+
+  padding-left: 50px;
+  margin-left: -63px;
   margin-right: 90px;
   padding-right: 10px;
-  padding-top: -100px;
+  padding-top: 10px;
+
 
 
 

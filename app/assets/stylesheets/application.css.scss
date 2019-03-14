@@ -6,12 +6,14 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 @import url('https://fonts.googleapis.com/css?family=Unica+One');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
 
 
 //variables
 $dark: #424652;
 $light: #9a9da4;
-$highlight: #ff9eb5;
+$highlight: #003366;
 $border: #e9e9e9;
 $white: #FFFFFF;
 
@@ -45,12 +47,14 @@ $white: #FFFFFF;
   width: 60%;
   padding: 20px;
   color: white;
-  top: 30%;
+  top: 37%;
   left: 55.5%;
-  transform: translate(-50%, -50%);
+  transform: translate(-90%, -95%);
   a {
+    font-size: 20px;
     text-decoration: none;
-    color: white;
+    color: $highlight;
+    padding-bottom: 1.7rem;
 
   }
 }
@@ -201,20 +205,25 @@ hr {
 
 nav{
   list-style-type: none;
-  padding-top: 20px;
+  padding-top: 30px;
   margin-top: -10px;
   padding-bottom: 1.7rem;
   border-top: 1px solid $border;
-  background-color: black;
+  background-color: white;
   display: flex;
   flex-direction: row;
   position: sticky;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid $highlight;
   border-top: 1px solid black;
   text-decoration: none;
-  padding-left: 15em;
+  padding-left: 50em;
+
   li{
+    padding-top: 10px;
     text-align: center;
+    float: right;
+    padding-left: 5px;
+
 
 
 
@@ -227,13 +236,14 @@ nav{
 
 
   a {
-    color: white;
+    color: $highlight;
     text-decoration: none;
-    margin: 10rem 1rem 1rem;
-    font-size: 22px;
-    letter-spacing: 2px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 10rem .5rem 1rem;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Overpass', sans-serif;
     text-transform: uppercase;
+
     a:hover {
       color: pink;
     }
@@ -263,6 +273,8 @@ nav{
   }
   nav{
     float: right;
+    background-color: black;
+    border: none;
     i{
       color: $dark;
       margin-left: 1em;
