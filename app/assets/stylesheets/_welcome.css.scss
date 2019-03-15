@@ -10,7 +10,7 @@
 
 
 
-.left_featured{
+/*.left_featured{
   position: absolute;
   text-align: center;
   margin-left: -50px;
@@ -36,7 +36,7 @@
     width: 100px;
     color: $dark;
   }
-}
+}*/
 
 
 
@@ -51,22 +51,36 @@ h3 {
 }
 
 hr{
+
+  margin-top: 20em;
   width: 100%;
 }
+
+.featured_img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
 #main_hdr {
-  padding: 40px;
-  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-top: -13.9em;
+
+  padding-bottom: 570px;
   color: #000000;
+  margin-left: 600px;
   font-size: 40px;
-  margin-left: 120px;
+  float: right;
+
 
 
   h3 {
     text-align: center;
     border-style: solid;
-    border-color: #6ed3cf;
+    border-color: #e69e8f;
     border-width: 5px;
-    margin-left: 105px;
+    margin-left: -30px;
     margin-top: -45px;
     width: 600px;
 
@@ -78,84 +92,89 @@ hr{
     background: rgba(256,256,256, 0.8);
     text-transform: capitalize;
     text-decoration: none;
-    color: #9068be;
+    color: #c2656d;
   }
-
+}
 }
 
+
 #main_hdr a:hover{
-  color: $dark;
+  color: #df8a76;
 }
 
 
 
 
 .image_catalog{
-
-  padding-left: 50px;
-  margin-left: -63px;
-  margin-right: 90px;
-  padding-right: 10px;
-  padding-top: 10px;
-
-
-
-
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0;
-
-}
-
-.title_catalog{
+//  border-color: $highlight;
+//  border-style: dashed;
+  //border-width: 2px 2px 0px 2px;
+  border-width: 2px 2px 0px 2px;
   padding-left: 10px;
   margin-left: 90px;
   margin-right: 90px;
   padding-right: 10px;
   display: flex;
+  flex-direction: row;
+//  padding-top: -100px;
+  padding-top: -100px;
+.home_image{
+  display: flex;
+  margin-top: 6px;
+  padding-top: 10px;
+  flex-basis: 20%;
+  background-color: $highlight;
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: flex-start;
+
+
+}
+
+
+
+}
+
+.title_catalog{
+
+  display: flex;
   margin-bottom: 20px;
   padding-bottom: 60px;
-  //border-color: $highlight;
-  //border-style: dashed;
-  //border-width: 0px 2px 2px 2px;
-  flex-direction: row;
+  margin-left: 150px;
+  margin-right: 20px;
+  padding-right: 50px;
 
+  flex-direction: row;
   a {
     position: absolute;
-    margin-top: -35px;
+    margin-top: -40px;
     text-align: center;
     text-decoration: none;
     color: $dark;
     letter-spacing: normal;
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
-    //background: rgba($highlight, 0.5);
-    //padding-left: 10px;
-    //padding-right: 10px;
+    padding-top: 5px;
+padding-right: 10px;
+    background-color: $highlight;
+
     width: 290px;
-    margin-left: 5px;
-
   }
-
   a:hover {
     color: $highlight;
   }
   h3 {
-  padding-left: 7px;
-  padding-right: 20px;
-  margin-left: 4.5px;
+
   width: 300px;
   text-align: center;
   color: white;
   font-size: 20px;
   margin-bottom: 20px;
   text-transform: capitalize;
-
-
   display: flex;
   text-align: center;
 }
-
 }
 
 
