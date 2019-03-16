@@ -55,6 +55,12 @@ hr{
   margin-top: 20em;
   width: 100%;
 }
+.trending {
+  background-color: #f8f8f8;
+  height: 500px;
+  width: 3000px;
+
+}
 
 .featured_img {
   display: flex;
@@ -106,9 +112,7 @@ hr{
 
 
 .image_catalog{
-//  border-color: $highlight;
-//  border-style: dashed;
-  //border-width: 2px 2px 0px 2px;
+  border-radius: 25px;
   border-width: 2px 2px 0px 2px;
   padding-left: 10px;
   margin-left: 90px;
@@ -116,14 +120,14 @@ hr{
   padding-right: 10px;
   display: flex;
   flex-direction: row;
-//  padding-top: -100px;
   padding-top: -100px;
+
 .home_image{
   display: flex;
   margin-top: 6px;
   padding-top: 10px;
   flex-basis: 20%;
-  background-color: $highlight;
+  background-color: white;
   position: relative;
   box-sizing: border-box;
   flex-direction: row;
@@ -136,14 +140,17 @@ hr{
 
 }
 
+.image_catalog{
+  margin-right: 200px;
+  margin-left: -50px;
+}
 .title_catalog{
 
   display: flex;
   margin-bottom: 20px;
   padding-bottom: 60px;
-  margin-left: 150px;
-  margin-right: 20px;
-  padding-right: 50px;
+  margin-left: -150px;
+
 
   flex-direction: row;
   a {
@@ -151,15 +158,15 @@ hr{
     margin-top: -40px;
     text-align: center;
     text-decoration: none;
-    color: $dark;
+    color: black;
     letter-spacing: normal;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
-    padding-top: 5px;
-padding-right: 10px;
-    background-color: $highlight;
+    padding-top: 10px;
+    height: 150px;
 
-    width: 290px;
+    background-color: white;
+    width: 400px;
   }
   a:hover {
     color: $highlight;
@@ -167,8 +174,9 @@ padding-right: 10px;
   h3 {
 
   width: 300px;
-  text-align: center;
   color: white;
+    margin-left: 110px;
+
   font-size: 20px;
   margin-bottom: 20px;
   text-transform: capitalize;
