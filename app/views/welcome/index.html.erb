@@ -39,17 +39,16 @@
  <div class="featured_img">
 
    <%= link_to filteredPosts[0] do %>
-    <center> <%= image_tag (filteredPosts[0].image.url(:large)), :style => 'width: 600px; display: block; height: 600px;  float: left; margin-left: -30px;', class: "featured_img1" %></center>
+    <center> <%= image_tag (filteredPosts[0].image.url(:large)), :style => 'width: 550px; display: block; height: 600px;  float: left; margin-left: -30px;', class: "featured_img1" %></center>
     <div id="main_hdr">
 
       <h3 id="main_hdr"><a href="#"><%= link_to filteredPosts[0].title, filteredPosts[0] %></a></h3>
  <% end %>
  </div>
- <hr>
-<section class="trending">
-
+<div class="trending">
 
  <div class="image_catalog">
+
 
    <% filteredPosts[1..3].each do |post| %>
      <%= link_to post do %>
@@ -71,8 +70,7 @@
 
    </div>
 
-</section>
-
+</div>
 
 
   <h3 class="title"> trending </h3>
