@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_21_235241) do
+ActiveRecord::Schema.define(version: 2019_04_04_002746) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -54,6 +54,11 @@ ActiveRecord::Schema.define(version: 2019_02_21_235241) do
     t.integer "image_file_size"
     t.datetime "image_updated_at"
     t.integer "category_id"
+    t.string "meta_description"
+    t.text "keywords"
+    t.string "canonical"
+    t.string "author"
+    t.string "publisher"
     t.index ["slug"], name: "index_posts_on_slug", unique: true
   end
 

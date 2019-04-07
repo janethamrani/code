@@ -26,6 +26,11 @@ class PostsController < ApplicationController
 
 
   def show
+  
+    set_meta_tags    title: @post.title,
+                     description: @post.meta_description
+
+
   end
 
 
@@ -47,7 +52,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :content, :image, :slug, :category_id)
+    params.require(:post).permit(:title, :content, :image, :slug, :category_id, :meta_description, :author)
   end
   def find_post
     @post = Post.friendly.find(params[:id])
