@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+
 
 
 #posts_wrapper {
@@ -35,6 +37,9 @@
        font-size: 2em;
        float: left;
        font-weight: lighter;
+       color: black;
+       font-family: 'Source Serif Pro', serif;
+
 
        a {
          text-decoration: none;

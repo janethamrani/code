@@ -53,6 +53,9 @@ h3 {
 }
 
 hr{
+  position: absolute;
+  left: 0;
+  right: 0;
   margin-top: 20em;
   width: 100%;
 }
@@ -254,11 +257,10 @@ left: 0;
 }
 
 
-
-
-
-
 .recent_posts{
+
+
+margin-left: 170px;
 
   .date_trending{
     color: $highlight;
