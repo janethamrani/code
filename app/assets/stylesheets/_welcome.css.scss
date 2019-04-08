@@ -45,6 +45,8 @@ h3 {
   text-transform: lowercase;
   text-align: left;
   font-size: 50px;
+  display: flex;
+  flex-direction: column;
   color: $highlight;
   padding-top: 20px;
   letter-spacing: 3px;
@@ -54,15 +56,39 @@ hr{
   margin-top: 20em;
   width: 100%;
 }
-.trending {
-  background-color: #f8f8f8;
 
-  height: 800px;
-  padding-top: 100px;
+.hr_color1, .hr_color2, .hr_color3{
+  width: 100%;
+  margin-top: 1200px;
+  background-color: #fb958b;
+left: 0;
+ height: 10px;
+  position: absolute;
+}
+
+.hr_color2{
+  margin-top: 1210px;
+  background-color: #f7a583;
+}
+.hr_color3{
+  margin-top: 1220px;
+  background-color: #f7baa1;
+}
+
+
+
+
+
+
+.trending {
+  //background-color: #f8f8f8;
+
+  height: 550px;
+  padding-top: 30px;
   padding-left: -20px;
   margin-left: -60px;
   width: 1800px;
-  margin-top: -610px;
+  margin-top: -700px;
 
 }
 
@@ -72,9 +98,9 @@ hr{
   flex-wrap: wrap;
 
 
-#main_hdr {
+.main_hdr {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: -13.9em;
 
   padding-bottom: 570px;
@@ -82,7 +108,16 @@ hr{
   margin-left: 600px;
   font-size: 40px;
   float: right;
-
+  #under_post{
+    border: none;
+    margin-top: -530px;
+    color: #e69e8f;
+    text-align: center;
+    font-size: 27px;
+    margin-left: 18px;
+    font-family: 'Playfair Display', serif;
+    width: 520px;
+  }
 
 
   h3 {
@@ -94,7 +129,7 @@ hr{
     margin-top: -45px;
     width: 600px;
 
-    height: 334px;
+    height: 605px;
   }
   a{
     font-family: 'Playfair Display', serif;
@@ -104,15 +139,18 @@ hr{
     text-decoration: none;
     color: #c2656d;
   }
+
+  p{
+    margin-left: -450px;
+    margin-top: -20em;
+  }
 }
 }
 
 
-#main_hdr a:hover{
+.main_hdr a:hover{
   color: #df8a76;
 }
-
-
 
 
 .image_catalog{
@@ -153,14 +191,14 @@ hr{
   margin-bottom: 20px;
   padding-bottom: 60px;
   margin-left: -130px;
-
-
+  padding-right: 20px;
   flex-direction: row;
 
 
 .text{
   background-color: white;
   padding-bottom: 100px;
+  //padding-right: 43px;
 
     p {
         width: 400px;
@@ -177,7 +215,7 @@ hr{
       }
       a {
 
-        font-size: 19px;
+        font-size: 17px;
 
         position: absolute;
         margin-top: -40px;
