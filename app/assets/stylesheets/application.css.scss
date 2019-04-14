@@ -47,7 +47,7 @@ $white: #FFFFFF;
   width: 60%;
   padding: 20px;
   color: white;
-  top: 75%;
+  top: 70%;
   left: 55.5%;
   transform: translate(-90%, -95%);
   a {
@@ -217,6 +217,7 @@ nav{
   border-top: 1px solid black;
   text-decoration: none;
   padding-left: 50em;
+  //margin-left: -50px;
 
   li{
     padding-top: 10px;
@@ -254,27 +255,57 @@ nav{
 }
 
 #page_title {
-  text-align: center;
-  border-bottom: 1px solid $border;
-  padding: 3em 0;
-  font-size: 1rem;
+  //text-align: center;
+//  border-bottom: 1px solid $border;
+//  padding: 3em 0;
+  font-size: 5rem;
   text-transform: uppercase;
+  color: white;
+  top: 10%;
+  padding-right: 0;
+  left: 10%;
+  padding-left: 500px;
+  transform: translate(-36%, -50%);
+ background: rgba(255,255,255,0.9);
+  margin-top: -90px;
+  margin-bottom: 300px;
+  text-align: center;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+
 }
 
 #main_footer{
-  padding: 2.5em 5%;
+  //position: absolute;
+  //padding: 2.5em 5%;
+  padding: 2.5em;
+  padding-bottom: 16.5em;
+  width: 83em;
+  //margin-bottom: 10px;
+  margin-left: -65px;
+  //padding-left: 100px;
+  margin-top: 20px;
+  margin-bottom: -3em;
+
+  margin-right: 80px;
   border-top: 1px solid $border;
   background-color: black;
-  padding-bottom: 15.2em;
+  //padding-bottom: 3.2em;
   .copyright {
+    padding-left: 50px;
     float: left;
     font-size: .9em;
+    margin-right: -5em;
     margin: 0;
   }
   nav{
-    float: right;
+    float: left;
     background-color: black;
     border: none;
+
     i{
       color: $dark;
       margin-left: 1em;
@@ -285,6 +316,7 @@ nav{
     }
   }
 }
+
 input[type="text"], input[type="email"], input[type="password"], textarea {
   width: 100%;
   max-width: 100%;

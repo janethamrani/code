@@ -1,8 +1,25 @@
+<%= image_tag ("https://lh3.googleusercontent.com/Sla7sAPM8uyqgqpEFDjuXJQ9ni-bomlwQqHph8gmtDQdUWr2GU3HrIhvJzPcNL2_Pg78lCvepZLMiPfRnqwUj_fGLPztPBeLm_Op9Tfco63tLRe79yjKGasVz5VMvEqYFC36u_xb4A=w2400"), :style => '', class: "post_banner_img"%>
 <h2 id = "page_title"><%= Category.find_by(name: params[:category]).name %> </h2>
-<div id="posts_wrapper" class="skinny_wrapper">
+
+
+
+ <!--<% if Category.find_by(name: params[:category]).name = "Lifestyle" %>
+    <%= image_tag ("https://lh3.googleusercontent.com/xdkH1V7dS0FAVSDBFbElzzL8RDxxwlRFrk_A6M9fcj7t-Ta4ZD2HovcX5wBTUohdmQX5OEoLhaODlw7JGbw4vmll_6BL-yPQrBiiE3CIoHTFeyC5HrouK3J0zmWaJmL92jZRdAZTBA=w2400"), :style => '', class: "post_banner_img"%>
+    <% end %>
+
+ <% else if Category.find_by(name: params[:category]).name = "Beauty"%>
+     <%= image_tag ("https://lh3.googleusercontent.com/Hz7Qrt552s5169FdOGSfC5aZ_nbjYK6lEDbVQtenFBBOm9We9KkzF63ZlDUR4x9Hm1kpzCwN83PcjRhGrjXGstwtcQqLZ3XAoyM-71DEe58AsPbwqGyp5xJop6YFma-g1RS2DHE18g=w2400"), :style => '', class: "post_banner_img"%>
+ <% end %>-->
+
+ <!--<hr class="banner_hr">-->
+
+
+
+<div class="posts_wrapper" class="skinny_wrapper">
 
 <% @posts.each do |post| %>
   <div class="post">
+    <p class="category"><%=Category.find_by(name: params[:category]).name%></p>
     <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
     <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
     <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>

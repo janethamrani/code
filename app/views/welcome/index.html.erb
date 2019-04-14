@@ -93,9 +93,10 @@
 
 <!--  <h3 class="title"> trending </h3> -->
 <div class="recent_posts">
-  <div id="posts_wrapper" class="skinny_wrapper">
+  <div id = "welcome_posts" class="skinny_wrapper posts_wrapper">
 
   <% filteredPosts[4..-1].each do |post| %>
+
       <div class="post">
       <p class="date_trending"><%= post.created_at.strftime('%A, %B %d') %></p>
       <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
@@ -104,6 +105,7 @@
       <li>
       <%= link_to category.name, posts_path(category: category.name) %>
       </li>
+
     <% end %>
 
 
@@ -118,5 +120,9 @@
 
 
 </div>
+
+</div>
+
+<div class="bottom">
 
 </div>
