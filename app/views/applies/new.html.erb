@@ -1,0 +1,30 @@
+<h1 id="form_title">Become a writer for urbanthropology!</h1>
+<div class="skinny_wrapper wrapper_padding">
+  <%= form_for @apply do |f| %>
+    <%= f.label :first %> <br />
+    <%= f.text_field :first, required: true %>
+    <br />
+    <%= f.label :last %> <br />
+    <%= f.text_field :last, required: true %>
+    <br />
+    <%= f.label :email %> <br />
+    <%= f.email_field :email, required: true %>
+    <br />
+
+
+    <br />
+    <%= f.label "Why are you a good fit for our team? (Few Sentences)" %><br />
+    <%= f.text_area :description, required: true %>
+
+    <br />
+
+    <div class="hidden">
+      <%= f.label :nickname %> <br />
+      <%= f.text_field :nickname %>
+    </div>
+
+    <%= f.submit 'Apply!', class: 'button' %>
+  <% end %>
+  <br>
+  <br>
+</div>
