@@ -134,6 +134,9 @@ body{
   width: 80%;
   max-width: 760px;
   margin: 0 auto;
+  color: black;
+  font-family: 'Playfair Display', serif;
+
 }
 
 .wrapper_padding{
@@ -206,23 +209,30 @@ hr {
 nav{
   list-style-type: none;
   padding-top: 30px;
-  margin-top: -10px;
+  margin-top: 0;
+
   padding-bottom: 1.7rem;
   border-top: 1px solid $border;
   background-color: white;
+  display: block;
   display: flex;
+  height: 90px;
+  justify-content: center;
+
   flex-direction: row;
-  position: sticky;
+  position: relative;
   border-bottom: 3px solid $highlight;
   border-top: 1px solid black;
   text-decoration: none;
   padding-left: 50em;
-  //margin-left: -50px;
+
+
 
   li{
     padding-top: 10px;
     text-align: center;
-    float: right;
+    //margin-left: -20px;
+    //float: right;
     padding-left: 5px;
 
 
@@ -245,9 +255,6 @@ nav{
     font-family: 'Overpass', sans-serif;
     text-transform: uppercase;
 
-    a:hover {
-      color: pink;
-    }
 
 
 
@@ -315,6 +322,15 @@ nav{
       }
     }
   }
+}
+//form stuff here
+#form_title{
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: $highlight;
+  font-size: 30px;
+  margin-top: 20px;
+
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {

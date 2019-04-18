@@ -27,20 +27,23 @@
       <!-- <img id="main_img" src = "https://lh3.googleusercontent.com/EgBUJSe04fiGXQUzxA67hXUNl1NR1_s0svy7Fu6n06YyhdCbOWVhFjFsyqHNhG9GHnDip80qS6tPphUJ2AV3HQfHc3w-KPJNBoQdl6LE4RY3dKIlDgLoNa3wXEK2qkuENjGrDBarlS7Bj0-ibAYHV-diVucJN5DtcW4Hcl_31lzK1td4PqWkokfoQIWMLy5l24SR1VNpMui_XglZip7ETImDOudSyBH2nM1ljayh0Nu__Qkwc9WNOnYANyJ6cA5gvUz4wakV67mka4kCDcOtXNpHGJbDx4aZiiX4GsdpDQI4YJO9YSrRrvG5GRmo1nmglVGxlpIpRzu2iclGB8lvyqw6pMSIJgts6DLOqZSMouS-tfDwXd3scaPLT6bLxHKgz02qLc7Iva-9kbrMqRY5qNczsiyI6mOct9yZnJ3sHmmOgEQc5NTPMLKKBpnboQC4UjUZZGBsEhTwQw8ZYI8u5W1lV6uh8AYO7C9zw8AuMG1fx3Lofr0Hz4UR0EVUbhljVUFgRbOqMCxlgtElnJln12yAmstuGg5f-9KNVESzHgCrmRr3D-Bl_KOPNnIpJjLsOFEHKjxfztWPcZ-0mLdYJH3xfG-w4jCIDitdCBcgfEoD5XeEp9h6fIt_0m3GPZlncxD99rtPQH85H1CI3ySwfsnlBVCKWP4=w528-h352-no">
       -->  <nav>
            <h3 id="img_overlay"><%= link_to "urbanthropology", root_path%></h3>
+
+
            <% Category.all.each do |category| %>
           <li>
           <%= link_to category.name, posts_path(category: category.name) %>
           </li>
           <% end %>
-          <!--
-          <%= link_to "Lifestyle", posts_path %>
-          <%= link_to "Beauty", projects_path %>
-          <%= link_to "Contact", new_contact_path %> -->
-          <% if user_signed_in? %>
-            <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-          
-          <% end %>
+
+
+      <!--    <% if user_signed_in? %>
+            <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "Apply" %>
+      <% else %>
+          <%= link_to "Apply", class: "Apply" %>
+          <% end %>-->
+
         </nav>
+
 
     </header>
 
@@ -54,7 +57,7 @@
 
 
    <footer id="main_footer">
-      <p class="copyright">© 2019 Urbanthropology</p>
+      <p class="copyright">© 2019 urbanthropology</p>
       <nav>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>

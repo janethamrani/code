@@ -1,7 +1,0 @@
-{
-  "name": "code",
-  "private": true,
-  "dependencies": {
-    "react-native-popup-dialog": "^0.18.2"
-  }
-}
