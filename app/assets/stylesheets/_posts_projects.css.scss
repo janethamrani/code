@@ -5,9 +5,9 @@
 
 .posts_wrapper {
   padding: 3em 0;
-  width: 100%;
+  width: 1000px;
   margin-top: -300px;
-  margin-left: 30px;
+  margin-left: 180px;
 //  position: relative;
 //margin-left: 200px;
 
@@ -20,9 +20,10 @@
 
      .posts_show_img {
          float: right;
+         position: relative;
          width: 550px;
          height: 350px;
-         margin-right: -220px;
+         //margin-right: -220px;
      }
      .category{
        //margin-left: 20px;
@@ -93,17 +94,25 @@
     h1{
     //  position: absolute;
       background: rgba(255, 255, 255, 0.9);
-      width: 65%;
-      padding: 20px;
+      width: 80%;
+    //  padding: 20px;
       text-align: center;
-      top: 30%;
+    //  top: 30%;
       text-decoration: none;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 4em;
-      font-family: 'PT Sans', sans-serif;
-      text-transform: uppercase;
+    //  left: 50%;
+      //transform: translate(-50%, -50%);
+      font-size: 5em;
+      text-align: center;
+      position: relative;
+      font-family: 'Playfair Display', serif;
+      color: $highlight;
+      font-size: 30px;
+      margin-left: 70px;
+      margin-top: 20px;
+      text-transform: capitalize;
       margin-top: 6em;
+
+      font-weight: bold; border: 3px solid #f1f1f1; z-index: 2;  padding: 20px;
     }
 
   }
