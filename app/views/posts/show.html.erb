@@ -6,10 +6,7 @@
     <h1 id="form_title"><%= @post.title %></h1>
     <p id="date_post"><%= @post.created_at.strftime("%A, %B %d") %></p>
 
-    <h1><%= @post.user.full_name %></h1>
-    <% if @post.user.full_name == nil %>
-    <h1> nothing here :( <h1>
-    <% end %>
+    <p class="author" style="margin-right: 10px;">By <%= @post.user.full_name %></p>
 
   </header>
 
