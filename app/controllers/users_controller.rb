@@ -3,8 +3,9 @@ class UsersController < ApplicationController
   before_action :authenticate_user!, only: [:show]
 
 
+
   def show
-    @user = User.friendly.find(params[:id])
+    @user = User.find(params[:id])
     @user_posts = @user.posts.all.order("created_at desc")
     @posts = Post.all.order("created_at desc")
   end
@@ -33,7 +34,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    if @user.update user_params
+    if @user.update_attributes(user_params)
       redirect_to @user, notice: "Your changes were saved!"
     else
       render 'edit'
@@ -48,7 +49,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation, :full_name)
+    params.require(:user).permit(:email, :password, :password_confirmation, :full_name, :slug)
 
   end
 

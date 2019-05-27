@@ -1,0 +1,28 @@
+<%= form_for @user, html: { multipart: true } do |f| %>
+
+<% if @user.errors.any? %>
+  <h2><%= pluralize(@user.errors.count, "error")%> prevented this post from saving:</h2>
+  <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+<%= f.label :full_name, "Full Name" %>
+<%= f.text_field :full_name %>
+
+<%= f.label "Upload profile picture" %><br><br />
+<%= f.file_field :profile %><br/><br/>
+<br>
+
+
+
+<%= f.label "Email (Will not be published)" %><br>
+<%= f.text_field :email %>
+
+
+
+
+<br><%= f.submit %>
+
+<% end %>

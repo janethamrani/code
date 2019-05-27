@@ -20,6 +20,7 @@ gem 'devise', '~> 4.2'
 gem "paperclip", "~> 6.0.0"
 gem 'ckeditor', '~> 4.1'
 gem 'meta-tags', '~> 2.1'
+gem 'rb-readline', '~> 0.5.3'
 
 
 
