@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
 
   def show
-    @user = User.find(params[:id])
+    @user = User.friendly.find(params[:id])
     @user_posts = @user.posts.all.order("created_at desc")
     @posts = Post.all.order("created_at desc")
   end
@@ -46,6 +46,9 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
+  def should_generate_new_friendly_id?
+     full_name_changed?
+   end
   private
 
   def user_params

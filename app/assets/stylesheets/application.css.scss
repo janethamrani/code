@@ -45,9 +45,10 @@ $white: #FFFFFF;
   position: absolute;
 
   width: 60%;
+
   padding: 20px;
   color: white;
-  top: 70%;
+  top: 65%;
   left: 55.5%;
   transform: translate(-90%, -95%);
   a {
@@ -206,42 +207,19 @@ hr {
 }
 
 
-nav{
-  list-style-type: none;
-  padding-top: 30px;
+/*nav{
   margin-top: 0;
 
-  padding-bottom: 1.7rem;
-  border-top: 1px solid $border;
   background-color: white;
   display: block;
   display: flex;
   height: 90px;
-  justify-content: center;
 
   flex-direction: row;
-  position: relative;
-  border-bottom: 3px solid $highlight;
   border-top: 1px solid black;
-  text-decoration: none;
-  padding-left: 50em;
 
 
 
-  li{
-    padding-top: 10px;
-    text-align: center;
-    //margin-left: -20px;
-    //float: right;
-    padding-left: 5px;
-
-
-
-
-  }
-  li:hover {
-    color: $highlight;
-  }
 
 
 
@@ -251,15 +229,81 @@ nav{
     text-decoration: none;
     margin: 10rem .5rem 1rem;
     font-size: 16px;
-    letter-spacing: 1px;
-    font-family: 'Overpass', sans-serif;
     text-transform: uppercase;
 
 
 
 
   }
-}
+}*/
+
+nav {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 1.7rem;
+
+    display: block;
+    width: 100%;
+    list-style-type: none;
+    border-top: 1px solid $border;
+    border-bottom: 3px solid $highlight;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 90px;
+    padding-left: 50em;
+    margin-left: auto;
+    margin-right: auto;
+
+    .link {
+      margin-top: 2px;
+
+    }
+    #sign_out {
+      margin-top: -5px;
+      width: 100px;
+    }
+    .list_stuff{
+      display: flex;
+      flex-direction: row;
+      margin-left: -6em;
+    }
+    li{
+      padding-top: 10px;
+      text-align: center;
+      //margin-left: -20px;
+      //float: right;
+      padding-left: 5px;
+
+
+
+
+    }
+    li:hover {
+      text-decoration: underline;
+    }
+
+    a {
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: 1px;
+
+      font-size: 16px;
+      margin: 0 0.9rem;
+      padding-top: 20px;
+      color: $highlight;
+      text-decoration: none;
+      color: 1;
+      -webkit-transition: text-decoration 0.4s ease-out;
+      -moz-transition: text-decoration 0.4s ease-out;
+      -o-transition: text-decoration .4s ease-out;
+      transition: text-decoration .4s ease-out;
+
+    }
+  }
+
 
 #page_title {
   //text-align: center;
@@ -374,5 +418,6 @@ input[type="submit"], .button{
 }
 
 @import "welcome";
+@import "user";
 @import "posts_projects";
 @import "pygments";

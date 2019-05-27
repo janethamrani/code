@@ -27,21 +27,24 @@
  <nav>
            <h3 id="img_overlay"><%= link_to "urbanthropology", root_path%></h3>
 
+          <div class="list_stuff">
 
            <% Category.all.each do |category| %>
           <li>
-          <%= link_to category.name, posts_path(category: category.name) %>
+          <%= link_to category.name, posts_path(category: category.name), class: "link" %>
           </li>
           <% end %>
 
 
       <% if user_signed_in? %>
-            <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "Apply" %>
+           <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "link", id: "sign_out" %>
       <% else %>
-          <%= link_to "Apply", class: "Apply" %>
-            <%= link_to "Sign in", new_user_session_path %>
+          <%= link_to "Apply", class: "link" %>
+            <%= link_to "Sign in", new_user_session_path, class: "link" %>
           <% end %>
         </nav>
+      </div>
+
 
 
     </header>
