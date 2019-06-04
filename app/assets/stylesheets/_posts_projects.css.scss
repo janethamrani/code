@@ -31,18 +31,16 @@
 
      }
      .date{
-      // margin-left: 20px;
-       font-size: .9em;
+       margin-right: 100px;
        text-align: left;
-       padding-left: 80px;
-       padding-top: 9px;
-      // margin-left: 50px;
-
-      // margin-top: 7px;
+       font-size: 2em;
+       //margin-left: 70px;
+       //margin-left: -50px;
        float: left;
-       color: $highlight;
-       margin-right: 400px;
-       font-family: 'Hind Madurai', sans-serif;
+       font-weight: lighter;
+       color: black;
+       font-family: 'Source Serif Pro', serif;
+
 
      }
 
@@ -66,16 +64,26 @@
            color: $highlight;
          }
        }
+    }
+  }
+}
 
-     }
+
+
+
+.skinny_wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 
 
     hr {
       margin: 3em auto;
     }
-   }
-}
+
+
 
 
 // - - - - Posts show
@@ -176,6 +184,86 @@
   border-color: $highlight;
   margin-top: -5px;
 }
+
+
+
+
+
+
+
+@media(max-width: 435px) {
+  .second_author {
+    margin-top: 0 !important;
+  }
+}
+
+@media(min-width: 1075px) and (max-width: 1240px) {
+  .authors {
+    display: inline-block !important;
+    .second_author {
+      margin-top: 5px;
+    }
+  }
+}
+
+@media (max-width: 448px) {
+    .skinny {
+      max-width: 90%;
+      margin: 0 auto !important;
+      #post_title_show {
+        padding: 0px 15px;
+        h1 {
+          padding-top: 20px;
+        }
+      }
+    }
+
+    #content {
+      padding: 0 15px;
+      p {
+        font-size: 1em;
+      }
+    }
+}
+
+@media(max-width: 800px) {
+  #nav_article2 {
+    display: none !important;
+  }
+  .main_title2 {
+    margin-left: 0 !important;
+    h1 a:hover {
+      color: white !important;
+    }
+  }
+}
+
+@media (max-width: 386px) {
+  .flex--container--post--title {
+    header {
+      .date {
+        font-size: 0.8em;
+        color: #00b5f9;
+        padding-bottom: 10px;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+      h1 {
+        font-size: 2em;
+        margin-bottom: 0;
+        padding: 10px;
+        color: #2b2b2b;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
 
 // - - - - Pagination
 

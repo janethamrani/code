@@ -1,25 +1,7 @@
-<!--<% @posts.each do |post| %>
-  <div class="feed">
-  <hr>
-    <p class="date"><%= post.created_at.strftime("%A, %b %d") %> </p>
-    <h3 id = "newest_title"><a href="#"><%= link_to post.title, post %></a></h3>
-    <%= image_tag post.image.url(:medium), :style => 'width: 50%; float: right;' %>
- </div>
-<%end%> -->
+
 <div class="wrapper wrapper_padding clearfix">
 
-  <!--<div class="col-1 about homepage_content">
-    <h2>About</h2>
-    <hr>
-    <p>There are many variations of passages of Lorem Ipsum <a href="#">available</a></p>
 
-      <p>But the majority have suffered
-      alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-     </p>
-      <p>There are many variations of passages of Lorem Ipsum available,
-        but the majority have suffered
-      </p>
-  </div> -->
 
 
   <% filteredPosts = [] %>
@@ -83,9 +65,6 @@
 <div class="hr_color3">
 
 </div>
-
-
-<!--  <h3 class="title"> trending </h3> -->
 <div class="recent_posts">
   <div id = "welcome_posts" class="skinny_wrapper posts_wrapper">
 
