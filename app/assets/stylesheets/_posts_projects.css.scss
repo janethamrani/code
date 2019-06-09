@@ -8,22 +8,31 @@
   width: 1000px;
   margin-top: -300px;
   margin-left: 180px;
-//  position: relative;
-//margin-left: 200px;
 
    .post{
      display: inline-flex;
      font-family: 'Hind Madurai', sans-serif;
      text-transform: capitalize;
+
      margin-top: 20px;
      margin-left: -200px;
+
+     .flex {
+       display: flex;
+       flex-direction: column;
+     }
 
      .posts_show_img {
          float: right;
          position: relative;
          width: 550px;
          height: 350px;
+         margin-left: -50px;
          //margin-right: -220px;
+     }
+     #posts_show_img_wel{
+       //margin-right: -100px;
+
      }
      .category{
        //margin-left: 20px;
@@ -31,7 +40,7 @@
 
      }
      .date{
-       margin-right: 100px;
+       //margin-right: 100px;
        text-align: left;
        font-size: 2em;
        //margin-left: 70px;
@@ -42,6 +51,15 @@
        font-family: 'Source Serif Pro', serif;
 
 
+     }
+     #date_trending_index {
+     float: left;
+     width: 200px;
+     height: 10px;
+     text-align: left;
+      margin-bottom: 70px;
+     margin-left: 50px;
+     //margin-left: -50em;
      }
 
      h2{
@@ -51,6 +69,7 @@
        //margin-left: 70px;
        //margin-left: -50px;
        float: left;
+
        font-weight: lighter;
        color: black;
        font-family: 'Source Serif Pro', serif;
@@ -58,12 +77,19 @@
 
        a {
          text-decoration: none;
+         font-family: 'Quicksand', sans-serif;
+         font-weight: lighter;
 
          color: black;
          &:hover {
            color: $highlight;
          }
        }
+      #post_index_h2 {
+        margin-left: -150px;
+        width: 500px;
+
+      }
     }
   }
 }
@@ -110,7 +136,7 @@
     //  left: 50%;
       //transform: translate(-50%, -50%);
       font-size: 5em;
-      text-align: center;
+      //text-align: center;
       position: relative;
       font-family: 'Playfair Display', serif;
       color: $highlight;

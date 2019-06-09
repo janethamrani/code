@@ -260,14 +260,17 @@ nav {
       margin-top: 2px;
 
     }
-    #sign_out {
+    #sign_out, #login, #apply {
       margin-top: -5px;
-      width: 100px;
+      width: 60px;
+    }
+    #sign_out{
+      width: 90px;
     }
     .list_stuff{
       display: flex;
       flex-direction: row;
-      margin-left: -6em;
+      margin-left: -11em;
     }
     li{
       padding-top: 10px;

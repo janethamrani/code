@@ -37,10 +37,10 @@
 
 
       <% if user_signed_in? %>
-           <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "link", id: "sign_out" %>
+      <a class="link" href="/signout" id="sign_out">Log Out</a>
       <% else %>
-            <a class="link" href="/applies/new">Apply</a>
-            <%= link_to "Sign in", new_user_session_path, :method => :get, class: "link", id: "sign_out" %>
+            <a class="link" href="/applies/new" id="apply">Apply</a>
+            <a class="link" href="/login" id="login">Log In</a>
           <% end %>
         </nav>
       </div>

@@ -71,9 +71,13 @@
   <% filteredPosts[4..-1].each do |post| %>
 
       <div class="post">
-      <p class="date_trending"><%= post.created_at.strftime('%A, %B %d') %></p>
+        <div class="flex">
+
+
+      <p class="date_trending" id="date_trending_wel"><%= post.created_at.strftime('%A, %B %d') %></p>
       <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
-      <%= image_tag (post.image.url(:large)), class: "posts_show_img" %>
+        </div>
+      <%= image_tag (post.image.url(:large)), class: "posts_show_img", id: "posts_show_img_wel"%>
       <% post.category_id do |category| %>
       <li>
       <%= link_to category.name, posts_path(category: category.name) %>

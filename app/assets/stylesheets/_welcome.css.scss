@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Markazi+Text');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Quicksand&display=swap');
 
 
 
@@ -262,12 +263,29 @@ left: 0;
 
 .recent_posts{
 
-
+margin-top: -200px;
 margin-left: 170px;
 
   .date_trending{
     color: $highlight;
     position: absolute;
+    margin-left: -100px;
+  }
+
+  #posts_show_img_wel {
+    width: 500px;
+    height: 400px;
+    margin-left: 100px;
+  }
+  h2{
+
+    margin-left: -100px;
+    width: 500px;
+  }
+  a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    //width: 700px;
   }
 }
 
