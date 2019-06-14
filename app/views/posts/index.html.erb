@@ -14,26 +14,32 @@
  <!--<hr class="banner_hr">-->
 
 
+ <div class="recent_posts" id="posts_index">
+   <div id = "welcome_posts" class="skinny_wrapper posts_wrapper">
 
-<div class="posts_wrapper" class="skinny_wrapper">
+  <div class="post">
+    <div class="flex">
 
-<% @posts.each do |post| %>
-<div class="post">
-<p class="date_trending" id="date_trending_index"><%= post.created_at.strftime('%A, %B %d') %></p>
-<h2><a href="#" id="post_index_h2"> <%= link_to post.title, post %> </a></h2>
-<%= image_tag (post.image.url(:large)), class: "posts_show_img", id: "posts_show_img_wel"%>
-<% post.category_id do |category| %>
-<li>
-<%= link_to category.name, posts_path(category: category.name) %>
-</li>
+      <% @posts.each do |post| %>
+
+  <p class="date_trending" id="date_trending_wel"><%= post.created_at.strftime('%A, %B %d') %></p>
+  <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
+    </div>
+  <%= image_tag (post.image.url(:large)), class: "posts_show_img", id: "posts_show_img_posts"%>
+  <% post.category_id do |category| %>
+  <li>
+  <%= link_to category.name, posts_path(category: category.name) %>
+  </li>
 
 <% end %>
+<% end %>
+
 
 
 
 
 </div>
-<% end %>
 
+</div>
 
 </div>

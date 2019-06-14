@@ -228,7 +228,7 @@ left: 0;
         margin-top: -40px;
         text-align: center;
         text-decoration: none;
-        color: black;
+        color: #554562;
 
         letter-spacing: normal;
         font-family: 'Playfair Display', serif;
@@ -265,6 +265,10 @@ left: 0;
 
 margin-top: -200px;
 margin-left: 170px;
+
+#welcome_post{
+  margin-top: 20px;
+}
 
   .date_trending{
     color: $highlight;

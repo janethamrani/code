@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 
 
 
+#posts_index{
+  padding-top: -150px;
+  margin-right: -430px;
+  #posts_show_img_posts {
+    width: 550px;
+  //  -margin-left: 10px;
+    height: 400px;
+
+  }
+  h2{
+    width: 600px;
+  }
+}
 .posts_wrapper {
   padding: 3em 0;
-  width: 1000px;
+  //width: 1000px;
   margin-top: -300px;
   margin-left: 180px;
 
@@ -14,7 +29,7 @@
      font-family: 'Hind Madurai', sans-serif;
      text-transform: capitalize;
 
-     margin-top: 20px;
+     margin-top: -90px;
      margin-left: -200px;
 
      .flex {
@@ -56,7 +71,7 @@
      float: left;
      width: 200px;
      height: 10px;
-     text-align: left;
+     //text-align: left;
       margin-bottom: 70px;
      margin-left: 50px;
      //margin-left: -50em;
@@ -64,7 +79,7 @@
 
      h2{
        margin-right: 100px;
-       text-align: left;
+       //text-align: left;
        font-size: 2em;
        //margin-left: 70px;
        //margin-left: -50px;
@@ -77,10 +92,11 @@
 
        a {
          text-decoration: none;
-         font-family: 'Quicksand', sans-serif;
+         text-align: left;
+         font-family: 'Crimson Text', serif;
          font-weight: lighter;
 
-         color: black;
+         color: #554562;
          &:hover {
            color: $highlight;
          }
@@ -118,6 +134,7 @@
   header{
     text-align: center;
     #date_post {
+
       padding-top: 10px;
       font-size: .9em;
       color: $light;
