@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:show]
+  load_and_authorize_resource
+
   def index
     if params[:category].blank?
       @posts = Post.all.order("created_at desc")
@@ -17,6 +19,7 @@ class PostsController < ApplicationController
 
   def create
     @post = current_user.posts.build(post_params)
+    @post.user_id = current_user.id
 
     if @post.save
       redirect_to @post, notice: "Your article was successfully saved!"
