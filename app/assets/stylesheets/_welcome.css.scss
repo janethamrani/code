@@ -70,6 +70,7 @@ hr{
 left: 0;
  height: 10px;
   position: absolute;
+  padding-bottom: 0;
 }
 
 .hr_color2{
@@ -94,7 +95,7 @@ left: 0;
   padding-left: -20px;
   margin-left: -60px;
   width: 1000px;
-  margin-top: -750px;
+  margin-top: -1120px;
 
 }
 
@@ -266,11 +267,11 @@ left: 0;
 
 .recent_posts{
 
-margin-top: -200px;
+margin-top: -420px;
 margin-left: 170px;
 
 #welcome_post{
-  margin-top: 20px;
+  //margin-top: -250px;
 }
 
   .date_trending{
@@ -283,6 +284,7 @@ margin-left: 170px;
     width: 500px;
     height: 400px;
     margin-left: 100px;
+    margin-bottom: 50px;
   }
   h2{
 

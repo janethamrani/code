@@ -20,7 +20,7 @@
   <div class="post">
     <div class="flex">
 
-      <% @posts.each do |post| %>
+      <% @posts.approved.each do |post| %>
 
   <p class="date_trending" id="date_trending_wel"><%= post.created_at.strftime('%A, %B %d') %></p>
   <h2><a href="#"> <%= link_to post.title, post %> </a></h2>

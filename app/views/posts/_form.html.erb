@@ -24,10 +24,31 @@
   <br>
   <br>
 
+
+
+  <% if @post.approved == true %>
+      <br><%= f.submit "Publish Changes" %>
+  <% else %>
+    <br><%= f.label "Submit My Article For Approval" %>
+    <%= f.check_box :waiting_for_approval %><br>
+    <%= f.hidden_field :approved, :value => false %><br>
+    <br><%= f.submit "Save & Preview" %>
+  <% end %>
+
+
+
+<br>
+
+
   <% if (current_user && (current_user.admin?)) %>
   <br><%= f.label "Approve" %>
   <%= f.check_box :approved %><br /><br />
   <% end %>
 
-  <%= f.submit %>
+
+
+
+
+
+
 <% end %>
