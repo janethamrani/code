@@ -11,7 +11,7 @@
   </header>
 
 <div id="content">
-  <%= markdown @post.content %>
+  <%= raw @post.content %>
 </div>
 
 <% if can? :update, @post %>
@@ -23,19 +23,9 @@
 
 
 
-<hr>
-<div id="share_box">
-  <p>Share This Post!</p>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-facebook"></i></a>
-
-</div>
-<hr>
 
 
 </div>
-
 
 <%= render 'disqus' %>
 

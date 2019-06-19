@@ -6,9 +6,13 @@
 
   <% filteredPosts = [] %>
   <!--filtered posts are supposed to be approved -->
-  <% Post.all.order("created_at desc").each do |post| %>
-    <% filteredPosts.push post %>
+<% if @posts.approved %>
+    <% @posts.each do |post| %>
+        <% filteredPosts.push post %>
   <% end %>
+  <% end %>
+
+
 
 
 
@@ -18,8 +22,8 @@
     <center> <%= image_tag (filteredPosts[0].image.url(:large)), :style => 'width: 550px; display: block; height: 600px;  float: left; margin-left: -30px;', class: "featured_img1" %></center>
     <div class="main_hdr">
 
-      <h3><a href="#"><%= link_to filteredPosts[0].title, filteredPosts[0] %></a> </h3>
-    <h3 id="under_post"><%= filteredPosts[0].content[3,300] %>...</h3>
+      <h3 id="main_title_wel"><a href="#"><%= link_to filteredPosts[0].title, filteredPosts[0] %></a> </h3>
+  <h3 id="under_post"><%= raw simple_format(filteredPosts[0].content[3,300]) %>...</h3>
     </div>
 
  <% end %>
@@ -47,7 +51,7 @@
      <% filteredPosts[1..3].each do |post| %>
      <div class="text">
        <h3><a href="#"><%= link_to post.title, post %></a></h3>
-      <p><%= post.content[3,200] %>... </p>
+      <p><%= markdown simple_format(post.content[3,200]) %>... </p>
 
      </div>
 
@@ -68,29 +72,29 @@
 <div class="recent_posts">
   <div id = "welcome_posts" class="skinny_wrapper posts_wrapper">
 
-  <% filteredPosts[4..-1].each do |post| %>
+    <% filteredPosts[3..-1].each do |post| %>
 
-      <div class="post" id="welcome_post">
-        <div class="flex">
-
-
-      <p class="date_trending" id="date_trending_wel"><%= post.created_at.strftime('%A, %B %d') %></p>
-      <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
-        </div>
-      <%= image_tag (post.image.url(:large)), class: "posts_show_img", id: "posts_show_img_wel"%>
-      <% post.category_id do |category| %>
-      <li>
-      <%= link_to category.name, posts_path(category: category.name) %>
-      </li>
-
-    <% end %>
+        <div class="post" id="welcome_post">
+          <div class="flex">
 
 
+        <p class="date_trending" id="date_trending_wel"><%= post.created_at.strftime('%A, %B %d') %></p>
+        <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
+          </div>
+        <%= image_tag (post.image.url(:large)), class: "posts_show_img", id: "posts_show_img_wel"%>
+        <% post.category_id do |category| %>
+        <li>
+        <%= link_to category.name, posts_path(category: category.name) %>
+        </li>
+
+      <% end %>
 
 
-  </div>
 
-<% end %>
+
+    </div>
+
+  <% end %>
 
 
   </div>

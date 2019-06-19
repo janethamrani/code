@@ -7,4 +7,12 @@ class Post < ApplicationRecord
   validates :title, :content, :category_id, presence:true
 
   belongs_to :user
+
+
+  scope :approved, -> {
+  where(approved: true)
+  }
+  scope :waiting_for_approval, -> {
+  where(waiting_for_approval: true, approved: false)
+  }
 end

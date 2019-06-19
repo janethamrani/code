@@ -24,7 +24,10 @@
   <br>
   <br>
 
-
+  <% if (current_user && (current_user.admin?)) %>
+  <br><%= f.label "Approve" %>
+  <%= f.check_box :approved %><br /><br />
+  <% end %>
 
   <%= f.submit %>
 <% end %>
