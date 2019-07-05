@@ -2,12 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+
+
 
 
 
 #posts_index{
-  padding-top: -150px;
-  margin-right: -430px;
+  //padding-top: -150px;
+  //margin-right: -430px;
+  margin-top: 50px;
+  padding-left: 60px;
+
   #posts_show_img_posts {
     width: 550px;
   //  -margin-left: 10px;
@@ -19,10 +25,11 @@
   }
 }
 .posts_wrapper {
-  padding: 3em 0;
+  //padding: 3em 0;
   //width: 1000px;
   margin-top: -300px;
   margin-left: 180px;
+
 
    .post{
      display: inline-flex;
@@ -96,7 +103,7 @@
          font-family: 'Crimson Text', serif;
          font-weight: lighter;
 
-         color: #554562;
+         color: $dark;
          &:hover {
            color: $highlight;
          }
@@ -177,9 +184,17 @@
   }
 
   p {
-    font-family: 'Merriweather', serif;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    color: $dark;
+  //  letter-spacing: 1px;
 
   }
+}
+
+#posts_posts{
+  margin-top: -200px;
+  margin-bottom: 20px;
 }
 #share_box {
   text-align: center;
@@ -229,10 +244,13 @@
 }
 
 
+#post_total{
+  margin-top: -200px;
+  margin-left: 250px;
+}
 
 
-
-
+/*
 
 @media(max-width: 435px) {
   .second_author {
@@ -304,7 +322,7 @@
 
 
 
-
+*/
 
 
 

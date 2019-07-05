@@ -1,0 +1,44 @@
+<div class="skinny_wrapper topics">
+  <h1 id="form_title">Writing Your First Article</h1>
+  <h3 class="title">How should I write my title?!</h3>
+  <p>Your title should be witty and informative and should make your reader want to read your article. It should be at least 6 words <br> Here are some examples:</p>
+  <li>20 Tweets that are Pretty Dumb, But Will Make You Laugh Anyways</li>
+  <li>I Was Today Years Old When I Discovered This Amazing Product From Target</li>
+  <li>This Blanket is CRUCIAL For the Coziest Night of Your Life</li>
+  <li>You're Wasting Your Time If You've Never Heard of This Hack</li>
+  <li>20 Pictures of Dogs to Brighten Your Day </li>
+  <li>15 Things You'll Only Understand if You're From (place)</li>
+  <li>Kylie Jenner Colored Her Hair Again And We're All Here For It</li>
+  <li>Zendaya's New Show, "Euphoria" Just Came Out And Here's Why You Need to Watch It</li>
+  <p>These are just examples, but your article should attract the reader!</p>
+  <h3 class="title">Introduction</h3>
+  <p>Your article NEEDS an introduction. It could be a sentencee or two if you want, but it has to be there. Basically just introduce what you're writing about. On the bright side, your article does NOT need a conclusion!</p>
+  <h3 class="title">How should I write my article?</h3>
+  <p>For the most part, your language should be informal and friendly since this is not a school essay. However, grammar is definitely important, but I can fix that before I approve your article!</p>
+  <h3 class="title">How DO I write my article?!</h3>
+  <p>I get it, the text-editor has a lot of features, which can be pretty overwhelming. Here are the most useful features!</p>
+  <img src="https://lh3.googleusercontent.com/moc3TBI1RmruScLGai45bAbtL5ovQeK6380kMb05dgNz5PoxivaIkPo935pBk0up5Cg1MOXvJHQANvYfkt_8ARwV4cQ4E6nw_2Ax4uVnuomFv5wNSn4rRE1VKZrCbTBe81loELpkpt_HiwbTPx0zEmDAILOViJeuyd37LEPninABTwMsneluwoMEJ4a7AahXqaDimc85FFRJEJjgPVo6qxMxF5MIk3SYqDr-RMjE8PIM47ukD1sEez8EbgdSFg0U8UZEvfxH4dtZoNM07Q9Wf8LFBji_vSj-KqBPUcwvcGtxjXuobp0y2uKKc0NjuprSJthth2uJtJGuvQJQTr6rvKtKw66MWErX0VW0t0rnqOJ819cUvOav9sMFEOVNVAyVmYUdy9a1I4TV1Amnn2ofkTerJ6G574yJRjpd983xQPXvuJvTcRhn4wjUvqfs_GVVsmvpRvmvqtGs_MOwYI8vlgYbz6tbryq92IQLtsqDx7VkEGBbncwPy_hvfWdeuuLXJ6YN7G15NKd-FxukrzHEprpCY6NThCUWnYlwbAly7aGfUCQbEWNkXkipmcyV6ZF8KWWIl8NUjkl9C9en-ndFWzZsS8Fk4iHjNRVCFP2lsSKsLcHyCYd7KxLvfR3ylLEEyPpNZDKuaD5Yx65eltKIWGpWu8Zrpqg=w1730-h932-no" alt="" class="texteditor">
+  <p>Feel free to check out the other features, but the ones mentioned in the image are probably the ones you'll be using most!</p>
+  <h3 class="title">Embedding Media</h3>
+  <p>Let's say you want to include a tweet, instagram post, or a youtube video. A simple screenshot just won't do. Therefore, you need to embed the media! Here's how:</p>
+  <p>Somewhere on the post, there's going to be an embed button. Here's an example on twitter:</p>
+  <img src="https://lh3.googleusercontent.com/F13Rd5pwMUVDhGXlGvDgyfeKVoDSnOWVOB1ZunN2u3ZhGcZgUQ6GdxfL5NaOQDTBOySQimQ5a6L1-TQJvy2aDmt-FcCvG3feDMaDLXu2P5j9gxyJte1nzGWrmD9LheCJcF1tJTHIdY3NiBxZGKi0Wvz3wDniCJ5KK8A-zU5YU4yFtaH1JdqZkqCLIn4kjW_iEt8GmILs99lO1v1d5Anxtri6w_oqYEm5O0Lk38cnqr461dR6ZFyO3Xo-fwci2CtkdZyZ06ie4Iku8Zc-10Xi9ud2Z93fHv7NA7YWQK3t-_PVzLEjWJlieltV7w1qEk1sag_b3jDYwE1ZrgYedKdQY9Rml_6TBEjqd62v-6ltsNK6X_K0IaRQnNnmlMNfneMAy7AI2Kh7BFcu3zMqg_Y5Bu7g6KveYGMpCN2DF0yhdlPo1nMmMrs5bqHjl-A40oeLEazHKAZ1vVEFK7WAEumesder1hPjgRbrQUEJx_JzeogRWqkuE6EhGADnsz2h6olme6uYNJ_MZdmHyyabloDXT0lVqAITJEOV_KrpwoPamC3lz29qabDsjCnzkGfRSAONhubT6ay1ogaUe6NTwCrT-btLWZM1bvTo-MSHq7LxnttVmYRCG2d331ue-XDEheQMvIT4Q5X742Kg2BK4CCXF63aHYD1b8Ro=w1276-h662-no" alt="" class="texteditor">
+ <p><br>When you click the button, copy the code</p>
+ <p>On the text editor, click the source button as shown below</p>
+<img src="https://lh3.googleusercontent.com/XavYXIIc8VpyD6d8YZaLxr2l2wFFePsq-KmxzPvtEt1WMBUO9vLQLMFfXxTpUmp_3BVAojY7R1yn97n-HCpTFrHGuQYLza51b97HVNcLd5NjpR-TOgU6Yeq1emD-eSpIJKdoJW1r1STe3CHu88-70G4Q63j5R9nqI1siAO2L9GUk8NXYy7CQS-uV6XA5iVlDk8G1yzpTUMIC0GiZZpQZgD0rDDxjcX-AWfTan-yrA5D7U4mmu0VKDCiFg5a-SS6nvuqrF0JUKXvEhFaN-Qjgt5HfZ19rosvnPATrlWAC09U7isbRvg9BgO1DPVMYTX5VrCVhCXlKAJTiIOB_rKHaE-qNkoF0m-tFfPN6q5L4HKTjygc5sczEFZZfJXz_O6J3Q6j0DdnmtcMFzAVoyKBQtvPRDKUG4HsxB6WMeewqdFpfew3izCalzTqAQIWqxkP3-BAlhOInO7Vz9H7Dd72mXV-0F9WnuiqI4rioFCHEEyBUa92GeohTdOl3VAB8x6AGGGEZjo0sigrWnssCJ4CbbnfkFdUllGW104ckGL8i9pNJOJXsjZSpWa--lUGAnr_cuGf5yYgv432NEHthmJKjeYVkx-KCkX0FsVPcfPALoK9GBcVVf7-Nb-f8KcrIOxrsxmv78rRakX72z3kCav3M07ngsR62EOw=w1496-h240-no" alt="" class="texteditor">
+<p>When you click that, the HTML code for your article will come up.</p>
+<img src="https://lh3.googleusercontent.com/gcOhdhvApHxAOwnR33FM-3m1mNBfXkR_8S362mrqqAp44LBuvt3M1vW6mqs7CIq5Tac5iy-y-uGpDCW6Vmx9hkKYmt-UTK_piCNXQD7jJ9d2SC9oF3GHplQ7-zpmcgQb5lCiQ8o4EYZ1dXOkI_ihc1VJ69KOWNe4-qHl7K3IyoG2w0QZNmVVJATqKzXj0VyS7ztd5HDMKQdfMyjyYnHbt9mn2zWFPfpw7lSFOKmLPSr4MkDEmdNfHAkPQ3OHnZTVcsQui7A45ZIeisKE_R8AtPiZz6Lc9gxDZEgDcvfZMcScIQmGZL6yvX3RgDNRbHX7TKNnsu0DDN6e2wuxQ9vuw9-3OUXe_cHuJ8yjfvEk-SMxhoAGV6_xCQNkHbIG_szCkxIlco3ftGvuABEu0vuFA9_CuGA0Eb3jqpmgNJA92ECV0jpaz1etj5_It8xtYCn-M6g_g2gHNEKOOtHZaUzmjGflM2u-rjeEH-oVtyf2omFGJhtF-aejHQRJ3J1rGS3cAa5yWBiYis8lQbdHnjT9PgxCYFc7YNLc_aFcMXoAXXANuRmB9HmBxaAy7qbzxGLfvhTobs2vd5jnISs3GGHo0NEE-AMfhiDJ1YeIwXZwLI_J2sk73muUrTfskAgvNYjVzjADd2NndfoUT9mLKuO9vRdATnrugYw=w2150-h800-no" alt= "" class="texteditor">
+<p>Now, don't get too scared. All you have to do is paste the code you just copied onto wherever you want on the article and you're done!</p>
+<h3 class="title">Adding Images</h3>
+<p>Images are a pretty important part to an article. Here's how to add them!</p>
+<p>When you find an image you like, right click the image and click "Copy Image Address"</p>
+<img src="https://lh3.googleusercontent.com/PYUCfiv6nb_9epgpnBPrklZ_xk7K10vOHghfIZeWMgp-nN1U84lkDdKdRnvwHM5CyeTn0R2POpF9W2c07Xhabapwzip745j6ZsJQRJkSbxtqJN6wAI31kvOvwTWlIoQWd6lo0ARAgq0sS-OQPT2myt3fm1n15PX9738JpeI7fFN7h646D61tMngUonSNUF5E7-XCX3Bgx4bBkakQRE35CzOx6yqqkfOUrofnPXjRUW6QRukDu6gQnDf7biCpaKMTKelnLT8WRRer8vPyPdIALAiIpTbsQ-W3IXziJ6rN4N1NPjw__-gQqCQKo-saH5E0UeE0IdNDYrC9uJ1n-0SxWnH50qnlbauD_sZJi0sIiGROFHKNiX8X_3dfuzJW1SuKP_DvJpvuRnEe3YYjMGwgW4D_DLFnJpzFVdtbjUI88M2bqfaGWCajxJ1h1ln1vtTvzC2H4eOEHTrExL9V9RqjE8eJIlLKVh886C5OGNpyQvT4m63keUnANzD-5YmzfwGPfJ854PtTRdLPR207bDHMMN6lY_Q8e4KJdAPDH6ZYfPuHPA7cee8NolHA5dFMh3slAvsogIRyedRjSQxr3PMnCUxTcsJL-Lv3AhwCbzAJnSIId4PbzHZd94IVbMkCkddMwRBC84IBScXcBpJqFMoXQjLdTgxNqdw=w537-h615-no" alt="">
+<p> <br>On the text editor, click the image button as highlighted in the image below</p>
+<img src="https://lh3.googleusercontent.com/M8Dhblg56YYhwCu6c0CPKOCfp2iFD0DPJ89AZCchX4Rt1uc4bA8OREP3ltIxOemYKLK2EtzsScahB99pIv6D7_XWaaFivYolgaUTdKmRExjauayjE7NSrBlJwTF5hux2QjzsDE3CPD1vDpvBgiMvD5X2hB_RUT6J3sqml3kjKwtzlD978s2rXtsx70d3jm4PAyDj233UjEzll0cGObdyIuuOPQY2RXG8PrKHERMygeRWVoD1nrw3aJvMJZNRo1KoBZfwuPGsaSmXnld-WF3Mcxcst6NuczzhpHMLb_P4hRMjnW32ab04xAq9E4oyjlKLYnI9qDVwchBCmHiD1oRsp09I1hTc4yLRJ0mb8uE_R1z6UqstiZQ_wAN6Q6QvgYD5aQWybQLuS_DvWwlL2KvlKs4HQhGpUt0D4nWjZ45tPbqqUHIDUgvcDi2BiFaGV3CtI40vEf0-hQthqkVU5JqwJtYpYksq4mmGiJXn_tneQo-YAivnSVWD3EgDabF6mtPfkuuzB6xmu7L68nNglwEzEP25k-4KBzq00SWIqrVfhDtYvvLN-c90Wnwtf-5DYCbFViZdqxTnKvq4somvdp_lq4iIfAfFzgSEvR2-KWBs_8l1a8jN4-RQLI-0w5TIb8vCDg8uf-3n60CQHH_pixr3RGShTbjeowc=w1658-h240-no" alt="" class="texteditor">
+<p>Now you see the image editor!</p>
+<img src="https://lh3.googleusercontent.com/xL_s_-l-uFwUBzp0N-QnqTjDgGTS1tx2t7qerzjYNQxYIYdDxJuMQQO2eqCK80tf_MilWKlB05rpbKGoYaTof7Zux7f3BNrcvV2mfSFja_YHvxtC0WCY9mi0CrrNY3Jjf64YxZMrzsPmH4PpV4KjZn0Q4lZKlOScoHZg7SZ39j0snIfhU8qo-1YHA6eYSmKX3Di8tSB0VGha8nU4dVxJXyyaycAesaGJ0UcpuanXESTqL4GawtFH9qL6jzO-jG1zPtyPKj00EgJzOX-ROjBVRAFA25B46ReeYOSVN1sphnpTWzqJRwk1hXf8c2R_CejB7jORA4B1D3m2a0ATow4vWPB2DCudVxxwwtravOQ0_BUnXFFYft-PSCjIBukPgfQ-xhBj6T731c13Q-dV4c3SBiZqKFc956962NVJ9a54pznpcrg7jFdxIpDMu6dusAoz6iMWlI-51WU61p2jLgXotyZghdlbFEVJ4vKnx3ZDrNa8MJ2FUxNp1W9SHo3p5yYahYfogvt1REro3bYepRRBq6CUth4Sm_MBEXZszQla7UH2slob4Jd8BC47SDdngw7weujjOf7jQGFPndbjH7lybHKSioFi_CwZyXy47TFYzH5awq7aI8qlol2EQYDeQT_z5sSGJgz_xwUjTwz5bZbt7BAhuNVSk3Q=w782-h1248-no" alt="" id="imgeditor">
+<p><br>Here's what everything means</p>
+<li id="url">URL: Paste the image address you copied earlier and you image should appear</li>
+<li id="wh">Width/Height: Edit the size of your image by the width and height</li>
+<li id="space">HSpace/VSpace: The amount of empty space around your image. HSpace is for horizontal spacing and Vspace is for vertical spacing</li>
+<li id="preview">Preview: It shows how your image looks relative to the existing text on your page and you can edit this to suit your needs</li>

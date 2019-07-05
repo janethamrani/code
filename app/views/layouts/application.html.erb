@@ -4,10 +4,10 @@
     <% if content_for?(:head) %>
         <%= yield(:head) %>
     <% else %>
-        <title>urbanthropology</title>
+        <title>consonancie</title>
     <% end %>
 
-    <title>urbanthropology</title>
+    <title>consonancie</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -17,23 +17,24 @@
   </head>
 
   <body>
+    <div id="page-container">
+      <div id="content-wrap">
 
 
 
-  <!--   <%= link_to "urbanthropology", root_path, class: "name" %>-->
-  <!--   <h3 id="img_logo">urbanthropology</h3>
-     <h3 id="img_overlay"><%= link_to "urbanthropology", root_path%></h3> -->
-     <header id="main_navigation" class="clearfix">
+
+  <!--   <%= link_to "consonancie", root_path, class: "name" %>-->
+  <!--   <h3 id="img_logo">consonancie</h3>
+     <h3 id="img_overlay"><%= link_to "consonancie", root_path%></h3> -->
+ <header id="main_navigation" class="clearfix">
  <nav>
-           <h3 id="img_overlay"><%= link_to "urbanthropology", root_path%></h3>
+           <h3 id="img_overlay"><%= link_to "consonancie", root_path%></h3>
 
           <div class="list_stuff">
-
-           <% Category.all.each do |category| %>
-          <li>
-          <%= link_to category.name, posts_path(category: category.name), class: "link" %>
-          </li>
-          <% end %>
+          <li class="list_item"><a href="/posts?category=Beauty">Beauty</a></li>
+          <li class="list_item"><a href="/posts?category=Lifestyle">Lifestyle</a></li>
+          <li class="list_item"><a href="/posts?category=Entertainment">Entertainment</a></li>
+          <li class="list_item"><a href="/posts?category=News">News</a></li>
 
 
       <% if user_signed_in? %>
@@ -56,15 +57,43 @@
       <% end %>
 
     <%= yield %>
+  </div>
 
 
-   <footer id="main_footer">
-      <p class="copyright">© 2019 urbanthropology</p>
+    <footer id="footer">
+      <p class="copyright">© 2019 consonancie</p>
+      <nav>
+      <a href="instagram.com/consonancie"><i class="fab fa-instagram"></i></a>
+
+
+      </nav>
+    </footer>
+
+
+<!--
+    <footer id="main_footer">
+      <div class="container--footer">
+        <div class="flex--column--footer">
+          <a href="/" class="copyright">The Teen Magazine</a>
+          <a href="/about-us">About Us</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+        </div>
+        <nav>
+          <a href="https://twitter.com/TheTeenMagazin_" target="_blank"><i class="fa fa-twitter" aria-hidden="false"></i></a>
+          <a href="https://www.instagram.com/theteenmagazine_" target="_blank"><i class="fa fa-instagram" aria-hidden="false"></i></a>
+        </nav>
+      </div>
+    </footer>-->
+
+
+  <!-- <footer id="main_footer">
+      <p class="copyright">© 2019 consonancie</p>
       <nav>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-facebook"></i></a>
       </nav>
-    </footer>
+    </footer> -->
+  </div>
   </body>
 </html>

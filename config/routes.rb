@@ -19,6 +19,7 @@ end
   get 'welcome/index'
   get 'topic-help' => 'pages#topic'
 
+
   root 'welcome#index'
   get '*path' => redirect('/')
 end

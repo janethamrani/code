@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 
 
 .flex--p {
@@ -62,4 +65,89 @@
   padding: 5px;
   text-decoration: none;
   float: right;
+}
+.guidelines {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-right: -2px;
+
+  margin-bottom: -22px;
+  margin-left: -4px;
+  .thelink {
+    width: 100%;
+    font-family: 'Lora', serif;
+
+  }
+  a {
+    text-decoration: none;
+    font-family: 'Lora', serif;
+
+    width: 100%;
+
+  }
+  .box {
+    height: 200px;
+    margin-right: 2px;
+    margin-left: 2px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Lora', serif;
+
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    transition: color 0.25s;
+
+    p {
+      line-height: 40px;
+      margin: 0;
+      padding: 5px;
+      font-size: 30px;
+      -webkit-text-stroke: 1px black;
+    }
+    p:hover {
+      font-size: 40px;
+      line-height: 60px;
+
+    }
+  }
+  .G1 {
+    background-color: #C5E0DC;
+  }
+  .G2 {
+    background-color: #F1D4AF;
+  }
+  .G3 {
+    background-color: #E08E79;
+  }
+  .G4 {
+    background-color: #E0E4CC;
+  }
+  .G5 {
+    background-color: #E0E4CC;
+  }
+}
+#sub_title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: $highlight;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.user_hr {
+  height: 10px;
+}
+.h2heading {
+  font-size: 20px;
+}
+.img_websites{
+  margin-left: 20px;
+  a{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+}
 }

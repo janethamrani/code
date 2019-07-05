@@ -47,12 +47,17 @@ $white: #FFFFFF;
   font-family: monospace;
   position: absolute;
 
-  width: 60%;
+  width: 40%;
 
-  padding: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: -10px;
+
   color: white;
   top: 65%;
-  left: 55.5%;
+  left: 50%;
+  margin-left: -150px;
   transform: translate(-90%, -95%);
   a {
     font-size: 20px;
@@ -275,7 +280,7 @@ nav {
       flex-direction: row;
       margin-left: -11em;
     }
-    li{
+    li {
       padding-top: 10px;
       text-align: center;
       //margin-left: -20px;
@@ -286,7 +291,7 @@ nav {
 
 
     }
-    li:hover {
+      .list_item:hover {
       text-decoration: underline;
     }
 
@@ -335,16 +340,78 @@ nav {
 
 }
 
+
+
+
+
+/*
+//projects
+footer {
+  height: 9em;
+  background-color: #191919;
+  color: white;
+
+  .container--footer {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .flex--column--footer {
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 25px;
+
+    a {
+      padding-top: 10px;
+      padding-bottom: 5px;
+      font-size: .9em;
+    }
+  }
+
+  nav {
+    padding: 20px;
+    padding-right: 0;
+    i {
+      color: white;
+    }
+  }
+}
+
+#main_footer {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  nav {
+    padding-top: 35px;
+  }
+
+  a:hover {
+    color: $dark;
+  }
+  nav {
+    float: right;
+    i {
+      margin-left: 1em;
+      padding-top: 1.6em;
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+}
+*/
+/*
 #main_footer{
-  //position: absolute;
+  position: fixed;
   //padding: 2.5em 5%;
-  padding: 2.5em;
-  padding-bottom: 16.5em;
-  width: 83em;
+  //padding: 2.5em;
+  //padding-bottom: 16.5em;
+  width: 100%;
   //margin-bottom: 10px;
   margin-left: -65px;
   //padding-left: 100px;
-  margin-top: 20px;
+  //margin-top: 20px;
   margin-bottom: -3em;
 
   margin-right: 80px;
@@ -373,6 +440,55 @@ nav {
     }
   }
 }
+*/
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+//  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  background-color: black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  .copyright {
+    padding-left: 50px;
+    float: left;
+    font-size: .9em;
+    padding-top: 3em;
+    margin-right: -5em;
+    margin: 0;
+  }
+  nav{
+    float: left;
+    background-color: black;
+    border: none;
+
+    i{
+      color: $dark;
+      float: left;
+      margin-left: -61.5em;
+      margin-top:-2em;
+      &:hover{
+        color: $highlight;
+      }
+      a{
+        color: $dark;
+
+      }
+    }
+}
+}
+
+
+
+
 //form stuff here
 #form_title{
   text-align: center;
