@@ -12,16 +12,19 @@ group :production do
   gem 'rails_12factor'
 end
 
+group :assets do
+  gem 'sass-rails'
+  gem 'sprockets-rails', github: 'rails/sprockets-rails'
+  gem 'uglifier'
+end
+
 
 group :development do
   gem 'sqlite3', '~> 1.3.6'
 end
-
+gem 'coffee-rails'
 gem 'puma', '~> 3.11'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '~> 2.7', '>= 2.7.2'
 gem 'jquery-rails'
-gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -32,13 +35,12 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 4.2'
 gem "paperclip", "~> 6.0.0"
-gem 'ckeditor', '~> 4.2.3'
 gem 'meta-tags', '~> 2.1'
 gem 'rb-readline', '~> 0.5.3'
 gem 'cancancan'
 gem 'carrierwave'
 gem 'mini_magick'
-
+gem 'ckeditor', '~> 4.2'
 
 
 
