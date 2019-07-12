@@ -12,18 +12,18 @@ group :production do
   gem 'rails_12factor'
 end
 
-group :assets do
-  gem 'sass-rails'
-  gem 'sprockets-rails', github: 'rails/sprockets-rails'
-  gem 'uglifier'
-end
-
-
 group :development do
   gem 'sqlite3', '~> 1.3.6'
 end
+  gem 'sass-rails'
+  gem 'sprockets-rails', github: 'rails/sprockets-rails'
+  gem 'uglifier'
+
+
+
 gem 'coffee-rails'
 gem 'puma', '~> 3.11'
+
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
