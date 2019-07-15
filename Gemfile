@@ -11,7 +11,7 @@ group :production do
   gem 'uglifier', '>= 4.1.20'
 end
 
-gem 'sqlite3', '~> 1.3.6'
+gem 'sqlite3', '~> 1.3.13'
 
 
 
