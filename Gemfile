@@ -11,10 +11,9 @@ group :production do
   gem 'uglifier', '>= 4.1.20'
 end
 
-gem 'sqlite3', '~> 1.3.13'
-
-
-
+group :development, :test do
+  gem 'sqlite3', '1.3.13'
+end
 
 
 
@@ -53,7 +52,12 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'ckeditor', '~> 4.2'
 
-
+group :development do
+  gem 'web-console'
+  gem 'listen', '~> 3.0.5'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+end
 
 
 
