@@ -49,7 +49,6 @@ gem 'meta-tags', '~> 2.1'
 gem 'rb-readline', '~> 0.5.3'
 gem 'cancancan'
 gem 'carrierwave'
-gem 'mini_magick'
 gem 'ckeditor', '~> 4.2'
 
 group :development do
