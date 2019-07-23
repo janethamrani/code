@@ -51,7 +51,6 @@ gem 'cancancan'
 gem 'carrierwave'
 gem 'ckeditor', '~> 4.2'
 gem 'activerecord-mysql2-adapter'
-gem "schema_plus"
 
 
 group :development do
