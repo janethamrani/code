@@ -50,7 +50,6 @@ gem 'rb-readline', '~> 0.5.3'
 gem 'cancancan'
 gem 'carrierwave'
 gem 'ckeditor', '~> 4.2'
-gem 'activerecord-mysql2-adapter'
 
 
 group :development do
