@@ -1,7 +1,7 @@
 class AddCategoryIdToPosts < ActiveRecord::Migration[5.2]
   def change
-    add_column :posts
-    add_column :category_id
+    change_table :posts
+    change_table :category_id
   end
 
   #def self.up
