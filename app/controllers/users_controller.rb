@@ -48,7 +48,9 @@ class UsersController < ApplicationController
     @user.destroy
     redirect_to users_path
   end
-
+  def is_admin?
+    redirect_to root_path unless (current_user && (current_user.admin?))
+  end
   def should_generate_new_friendly_id?
      full_name_changed?
    end
