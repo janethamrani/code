@@ -1,30 +1,27 @@
-<h1 id="form_title">Become a writer for consonancie!</h1>
+
+
+<h1 id="form_title">Say Hello!</h1>
 <div class="skinny_wrapper wrapper_padding">
-  <%= form_for @apply do |f| %>
-    <%= f.label :first %> <br />
+    <%= form_for @apply do |f| %>
+    <%= f.label :first %>
     <%= f.text_field :first, required: true %>
-    <br />
-    <%= f.label :last %> <br />
+    <%= f.label :last %>
     <%= f.text_field :last, required: true %>
-    <br />
-    <%= f.label :email %> <br />
+  <br>
+    <%= f.label :email %>
     <%= f.email_field :email, required: true %>
-    <br/>
+    <br>
+    <%= f.label :description, "Why are you a good fit for our team? (Few Sentences)" %><br />
+    <%= f.text_area :description, as: :text %>
 
+      <div class="hidden">
+        <%= f.label :nickname %> <br>
+        <%= f.text_field :nickname, hint: 'leave this field blank' %>
+      </div>
+      <br>
+      <%= f.submit 'Send Message', class: "button" %>
 
-    <br/>
-    <%= f.label "Why are you a good fit for our team? (Few Sentences)" %><br />
-    <%= f.text_area :description, required: true %>
-
-    <br/>
-
-    <div class="hidden">
-      <%= f.label :nickname %> <br />
-      <%= f.text_field :nickname %>
-    </div>
-
-    <%= f.submit 'Apply!', class: 'button' %>
   <% end %>
-  <br>
-  <br>
+<br><br>
+
 </div>

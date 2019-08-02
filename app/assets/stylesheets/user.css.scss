@@ -5,10 +5,14 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 
-
+a{
+  //text-decoration: none;
+  color: $dark;
+}
 .flex--p {
   text-align: center;
 }
+
 .flex--postlist--item {
   display: flex;
   flex-direction: row;
@@ -63,6 +67,7 @@
   width: 150px;
   text-align: center;
   padding: 5px;
+  margin-right: 125px;
   text-decoration: none;
   float: right;
 }
@@ -82,7 +87,6 @@
   a {
     text-decoration: none;
     font-family: 'Lora', serif;
-
     width: 100%;
 
   }

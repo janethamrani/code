@@ -20,8 +20,11 @@
 <%= f.label "Email (Will not be published)" %><br>
 <%= f.text_field :email %>
 
+
+<% if current_user && current_user.admin? %>
 <%= f.label "Admin" %>
 <%= f.check_box :admin %><br />
+<% end %>
 
 
 <br><%= f.submit %>

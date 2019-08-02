@@ -93,7 +93,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false #make this false later maybe
 
-  config.action_mailer.default_url_options = { host: 'https://obscure-harbor-21335.herokuapp.com/'}
+  config.action_mailer.default_url_options = { host: 'https://www.consonancie.com/'}
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
