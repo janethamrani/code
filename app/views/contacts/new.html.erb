@@ -1,5 +1,4 @@
-
-<h1 id="form_title">Say Hello!</h1>
+<h1 id="form_title">Become a writer for Consonancie</h1>
 <div class="skinny_wrapper wrapper_padding">
   <%= form_for @contact do |f| %>
       <%= f.label :name %> <br>
@@ -8,7 +7,7 @@
       <%= f.label :email %> <br>
       <%= f.email_field :email, required: true %>
       <br>
-      <%= f.label :message %> <br>
+      <h5>Why are you a good fit for our team?</h5>
       <%= f.text_area :message, as: :text  %>
 
       <div class="hidden">
@@ -16,7 +15,7 @@
         <%= f.text_field :nickname, hint: 'leave this field blank' %>
       </div>
       <br>
-      <%= f.submit 'Send Message', class: "button" %>
+      <%= f.submit 'Apply!', class: "button" %>
 
   <% end %>
 <br><br>
