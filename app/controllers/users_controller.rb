@@ -21,8 +21,9 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new(:email => 'test@example.com', :password => 'password', :password_confirmation => 'password', :full_name => 'Jane Doe')
+    @user = User.new
     @user.save
+
   end
 
   def create
@@ -30,7 +31,7 @@ class UsersController < ApplicationController
     @user.save
 
     if @user.save
-      redirect_to @user, notice: "Your changes were successfully saved!"
+      redirect_to root_path, notice: "Your changes were successfully saved!"
     else
       render 'new', notice: "Oh no! Your changes were not able to be saved!"
     end
@@ -38,7 +39,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update_attributes(user_params)
-      redirect_to @user, notice: "Your changes were saved!"
+      redirect_to root_path, notice: "Your changes were saved!"
     else
       render 'edit'
     end
@@ -46,7 +47,7 @@ class UsersController < ApplicationController
 
   def destroy
     @user.destroy
-    redirect_to users_path
+    redirect_to root_path
   end
   def is_admin?
     redirect_to root_path unless (current_user && (current_user.admin?))
@@ -58,7 +59,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:email, :password, :password_confirmation, :full_name, :slug, :admin)
-
   end
 
   def find_user

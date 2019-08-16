@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :admins
   mount Ckeditor::Engine => '/ckeditor'
-  devise_for :users, controllers: {:registrations => "users/registrations"}
+  devise_for :users, :skip => [:registrations]
+#, controllers: {:registrations => "users/registrations"}
 
   devise_scope :user do
   get 'login', to: 'devise/sessions#new'
   get 'signout', to: 'devise/sessions#destroy', as: :destroy_user_session_path
+  get "/sign_up" => "users#new", as: :new_user_path 
   end
 
 
