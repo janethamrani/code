@@ -15,9 +15,7 @@ group :development, :test do
   gem 'sqlite3', '1.3.13'
 end
 
-
-
-
+gem 'sqlite3', '1.3.13'
 
 gem 'pg'
 gem 'sprockets-rails', github: 'rails/sprockets-rails'
@@ -45,12 +43,15 @@ gem 'friendly_id', '~> 5.2', '>= 5.2.4'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 4.2'
-gem "paperclip", "~> 6.0.0"
 gem 'meta-tags', '~> 2.1'
 gem 'rb-readline', '~> 0.5.3'
 gem 'cancancan'
 gem 'carrierwave'
 gem 'ckeditor', '~> 4.2'
+gem 'figaro'
+gem "paperclip", "5.1.0"
+gem 'aws-sdk', '~> 2.6.44'
+
 
 
 group :development do

@@ -76,7 +76,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :content, :image, :slug, :category_id, :meta_description, :author, :waiting_for_approval, :approved)
+    params.require(:post).permit(:title, :content, :thumbnail, :image, :slug, :category_id, :meta_description, :author, :waiting_for_approval, :approved)
   end
   def find_post
     @post = Post.friendly.find(params[:id])
