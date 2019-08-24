@@ -16,7 +16,7 @@ group :development, :test do
   gem 'sqlite3', '1.3.13'
 end
 
-gem 'sqlite3', '1.3.13'
+#gem 'sqlite3', '1.3.13'
 
 gem 'sprockets-rails', github: 'rails/sprockets-rails'
 gem 'bootsnap', '>= 1.1.0', require: true
