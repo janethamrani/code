@@ -6,6 +6,7 @@ gem 'rails', '~> 5.2.1'
 
 
 group :production do
+  gem 'pg'
 
   gem 'rails_12factor'
   gem 'uglifier', '>= 4.1.20'
@@ -15,9 +16,8 @@ group :development, :test do
   gem 'sqlite3', '1.3.13'
 end
 
-gem 'sqlite3', '1.3.13'
+#gem 'sqlite3', '1.3.13'
 
-gem 'pg'
 gem 'sprockets-rails', github: 'rails/sprockets-rails'
 gem 'bootsnap', '>= 1.1.0', require: true
 
