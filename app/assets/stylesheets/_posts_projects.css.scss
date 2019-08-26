@@ -138,44 +138,48 @@
 
 // - - - - Posts show
 
-#post_show_content {
-  header{
-    text-align: center;
-    width: 100%;
-    #date_post {
 
-      padding-top: 10px;
-      font-size: .9em;
-      color: $light;
-      margin: 0;
 
-      color: gray;
-    }
-    h1{
-    //  position: absolute;
-      background: rgba(255, 255, 255, 0.9);
-      width: 80%;
-    //  padding: 20px;
-      text-align: center;
-    //  top: 30%;
-      text-decoration: none;
-    //  left: 50%;
-      //transform: translate(-50%, -50%);
-      font-size: 5em;
-      //text-align: center;
-      position: relative;
-      font-family: 'Playfair Display', serif;
-      color: $highlight;
-      font-size: 30px;
-      margin-left: 80px;
-      margin-top: 20px;
-      text-transform: capitalize;
-      margin-top: 6em;
+header{
+  text-align: center;
+  width: 100%;
+  #date_post {
 
-      font-weight: bold; border: 3px solid #f1f1f1; z-index: 2;  padding: 20px;
-    }
+    padding-top: 10px;
+    font-size: .9em;
+    color: $light;
+    margin: 0;
 
+    color: gray;
   }
+  h1{
+  //  position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    width: 80%;
+  //  padding: 20px;
+    text-align: center;
+  //  top: 30%;
+    text-decoration: none;
+  //  left: 50%;
+    //transform: translate(-50%, -50%);
+    font-size: 5em;
+    //text-align: center;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    color: $highlight;
+    font-size: 30px;
+    margin-left: 80px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    margin-top: 6em;
+
+    font-weight: bold; border: 3px solid #f1f1f1; z-index: 2;  padding: 20px;
+  }
+
+}
+
+#post_show_content {
+
   h2, h3, h4, h5, h6{
     font-family: 'Fjalla One', sans-serif;
     letter-spacing: 1px;
