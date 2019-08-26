@@ -1,13 +1,3 @@
-<div class="wrapper wrapper_padding clearfix">
-
-
-
-  <% filteredPosts = [] %>
-  <!--filtered posts are supposed to be approved -->
-  <% Post.approved.all.order("created_at desc").each do |post| %>
-    <% filteredPosts.push post %>
-  <% end %>
-
 
 
  <div class="featured_img">
@@ -21,6 +11,19 @@
     </div>
 
     <% end %>
+
+
+<div class="wrapper wrapper_padding clearfix">
+
+
+
+  <% filteredPosts = [] %>
+  <!--filtered posts are supposed to be approved -->
+  <% Post.approved.all.order("created_at desc").each do |post| %>
+    <% filteredPosts.push post %>
+  <% end %>
+
+
 
 
 <div class="trending">
