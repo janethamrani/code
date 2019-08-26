@@ -28,10 +28,54 @@
 
 <div class="trending">
 
- <div class="image_catalog">
+<div class="section">
+  <div class="one-article" style="width: 33%;">
+    <%= link_to filteredPosts[1] do %>
+    <%= image_tag (post.thumbnail.url(:large)), class: "home_image" %>
+    <h3><a href="#"><%= link_to post.title, post %></a></h3>
+    <p><%= post.content.truncate_words(20) %> </p>
+
+  </div>
+  <div class="one-article" style="width: 33%;">
+    <%= link_to filteredPosts[2] do %>
+    <%= image_tag (post.thumbnail.url(:large)), class: "home_image" %>
+    <h3><a href="#"><%= link_to post.title, post %></a></h3>
+    <p><%= post.content.truncate_words(20) %> </p>
 
 
-   <% filteredPosts[1..3].each do |post| %>
+  </div>
+  <div class="one-article" style="width: 33%;">
+    <%= link_to filteredPosts[3] do %>
+      <%= image_tag (post.thumbnail.url(:large)), class: "home_image" %>
+      <h3><a href="#"><%= link_to post.title, post %></a></h3>
+      <p><%= post.content.truncate_words(20) %> </p>
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <div class="image_catalog"> -->
+
+
+   <!-- <% filteredPosts[1..3].each do |post| %>
      <%= link_to post do %>
      <div id="indv_pic">
        <%= image_tag (post.thumbnail.url(:large)), :style => 'width: 410px; height: 300px; padding-right:10px;
@@ -53,8 +97,8 @@
      </div>
 
    <% end %>
-   </div>
-
+   </div> -->
+<!--
 </div>
 
 <div class="hr_color1">
@@ -97,6 +141,6 @@
   </div>
 
 
-</div>
+</div> -->
 
 </div>
