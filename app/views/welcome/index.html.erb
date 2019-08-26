@@ -17,7 +17,7 @@
     <div class="main_hdr">
 
       <h3 id="title_main"><a href="#"><%= link_to filteredPosts[0].title, filteredPosts[0] %></a> </h3>
-    <h3 id="under_post"><%=  simple_format(filteredPosts[0].content[3,300]) %>...</h3>
+    <p id="under_post"><%=  simple_format(filteredPosts[0].content[3,300]) %>...</p>
     </div>
 
     <% end %>
