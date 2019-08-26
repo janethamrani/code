@@ -163,7 +163,7 @@ header{
   //  top: 30%;
     text-decoration: none;
   //  left: 50%;
-    //transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-size: 5em;
     //text-align: center;
     position: relative;
@@ -173,7 +173,6 @@ header{
     margin-left: 80px;
     margin-top: -40px;
     text-transform: capitalize;
-    margin-top: 6em;
 
     font-weight: bold; border: 3px solid #f1f1f1; z-index: 2;  padding: 20px;
   }
