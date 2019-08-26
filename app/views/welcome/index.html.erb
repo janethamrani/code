@@ -34,6 +34,7 @@
     <%= image_tag (post.thumbnail.url(:large)), class: "home_image" %>
     <h3><a href="#"><%= link_to post.title, post %></a></h3>
     <p><%= post.content.truncate_words(20) %> </p>
+    <% end %>
 
   </div>
   <div class="one-article" style="width: 33%;">
@@ -41,6 +42,7 @@
     <%= image_tag (post.thumbnail.url(:large)), class: "home_image" %>
     <h3><a href="#"><%= link_to post.title, post %></a></h3>
     <p><%= post.content.truncate_words(20) %> </p>
+    <% end %>
 
 
   </div>
@@ -49,6 +51,7 @@
       <%= image_tag (post.thumbnail.url(:large)), class: "home_image" %>
       <h3><a href="#"><%= link_to post.title, post %></a></h3>
       <p><%= post.content.truncate_words(20) %> </p>
+      <% end %>
 
 
   </div>
