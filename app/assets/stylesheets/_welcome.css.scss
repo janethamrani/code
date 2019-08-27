@@ -383,28 +383,37 @@ margin-left: 170px;
   flex-direction: row;
   width: 100%;
   margin: 0 auto;
-  .trending-new{
+  .trending-new {
     flex-grow: 300;
     flex-shrink: 300;
-    .section{
-      h3 {
+  }
+  .section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    .one_beauty_article {
+      width: 31%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      h1 {
         margin: 0;
         margin-top: 10px;
         font-size: 22px;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Lucitana';
         font-weight: 400;
-      }
-      p{
-        margin: 0 0 1.6em 0;
-      }
-      .desc{
-        color: #555;
-        font-size: 0.9em !important;
-        line-height: 1.2;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        text-overflow: ellipsis;
+        a {
+          color: black;
+          text-decoration: none;
+        }
       }
     }
+  }
+  p {
+    font-size: 0.5em;
+    margin-bottom: 5px;
   }
 }
