@@ -7,40 +7,34 @@
 
 
 
-
-<div class="trending-new">
-
-<div class="section">
-  <div class="one-article" style="width: 33%;">
-    <%= link_to filteredPosts[1] do %>
-    <%= image_tag (filteredPosts[1].thumbnail.url(:large)), class: "home_image" %>
-    <h3><a href="#"><%= link_to filteredPosts[1].title, filteredPosts[1] %></a></h3>
-    <p><%= filteredPosts[1].created_at.strftime("%A, %b %d")%></p>
-    <p class="desc"><%= filteredPosts[1].content.truncate_words(20) %> </p>
-    <% end %>
-
-  </div>
-  <div class="one-article" style="width: 33%;">
-    <%= link_to filteredPosts[2] do %>
-    <%= image_tag (filteredPosts[2].thumbnail.url(:large)), class: "home_image" %>
-    <h3><a href="#"><%= link_to filteredPosts[2].title, filteredPosts[2] %></a></h3>
-    <p><%= filteredPosts[2].created_at.strftime("%A, %b %d")%></p>
-    <p class="desc"><%= filteredPosts[2].content.truncate_words(20) %> </p>
-    <% end %>
-
-
-  </div>
-  <div class="one-article" style="width: 33%;">
-    <%= link_to filteredPosts[3] do %>
-      <%= image_tag (filteredPosts[3].thumbnail.url(:large)), class: "home_image" %>
-      <h3><a href="#"><%= link_to filteredPosts[3].title, filteredPosts[3] %></a></h3>
-      <p><%= filteredPosts[3].created_at.strftime("%A, %b %d")%></p>
-      <p class="desc"><%= filteredPosts[3].content.truncate_words(20) %> </p>
-      <% end %>
-
-
-  </div>
-
+<div class="flex--welcome">
+    <div class="trending-new">
+      <div class="section">
+        <div class="one-article" style="width: 33%;">
+          <%= link_to filteredPosts[1] do %>
+          <%= image_tag (filteredPosts[1].thumbnail.url(:large)), class: "home_image" %>
+          <h3><a href="#"><%= link_to filteredPosts[1].title, filteredPosts[1] %></a></h3>
+          <p><%= filteredPosts[1].created_at.strftime("%A, %b %d")%></p>
+          <p class="desc"><%= filteredPosts[1].content.truncate_words(20) %> </p>
+          <% end %>
+        </div>
+        <div class="one-article" style="width: 33%;">
+          <%= link_to filteredPosts[2] do %>
+          <%= image_tag (filteredPosts[2].thumbnail.url(:large)), class: "home_image" %>
+          <h3><a href="#"><%= link_to filteredPosts[2].title, filteredPosts[2] %></a></h3>
+          <p><%= filteredPosts[2].created_at.strftime("%A, %b %d")%></p>
+          <p class="desc"><%= filteredPosts[2].content.truncate_words(20) %> </p>
+          <% end %>
+        </div>
+        <div class="one-article" style="width: 33%;">
+          <%= link_to filteredPosts[3] do %>
+            <%= image_tag (filteredPosts[3].thumbnail.url(:large)), class: "home_image" %>
+            <h3><a href="#"><%= link_to filteredPosts[3].title, filteredPosts[3] %></a></h3>
+            <p><%= filteredPosts[3].created_at.strftime("%A, %b %d")%></p>
+            <p class="desc"><%= filteredPosts[3].content.truncate_words(20) %> </p>
+            <% end %>
+        </div>
+    </div>
 </div>
 
 
