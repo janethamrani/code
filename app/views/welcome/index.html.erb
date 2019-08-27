@@ -8,32 +8,15 @@
 
 
 
-
- <div class="featured_img">
-
-   <%= link_to filteredPosts[0] do %>
-    <center> <%= image_tag (filteredPosts[0].thumbnail.url(:large)), :style => 'width: 85%;display: block;height: 600px;margin-left: -10px;margin-top: 10px;margin-right: 40px;', class: "featured_img1" %></center>
-    <div class="main_hdr">
-
-      <h3 id="title_main"><a href="#"><%= link_to filteredPosts[0].title, filteredPosts[0] %></a> </h3>
-    <h3 id="under_post"><%=  simple_format(filteredPosts[0].content[3,300]) %>...</h3>
-    </div>
-
-    <% end %>
-
-</div>
-<div class="wrapper wrapper_padding clearfix">
-
-
-
-<div class="trending">
+<div class="trending-new">
 
 <div class="section">
   <div class="one-article" style="width: 33%;">
     <%= link_to filteredPosts[1] do %>
     <%= image_tag (filteredPosts[1].thumbnail.url(:large)), class: "home_image" %>
     <h3><a href="#"><%= link_to filteredPosts[1].title, filteredPosts[1] %></a></h3>
-    <p><%= filteredPosts[1].content.truncate_words(20) %> </p>
+    <p><%= filteredPosts[1].created_at.strftime("%A, %b %d")%></p>
+    <p class="desc"><%= filteredPosts[1].content.truncate_words(20) %> </p>
     <% end %>
 
   </div>
@@ -41,7 +24,8 @@
     <%= link_to filteredPosts[2] do %>
     <%= image_tag (filteredPosts[2].thumbnail.url(:large)), class: "home_image" %>
     <h3><a href="#"><%= link_to filteredPosts[2].title, filteredPosts[2] %></a></h3>
-    <p><%= filteredPosts[2].content.truncate_words(20) %> </p>
+    <p><%= filteredPosts[2].created_at.strftime("%A, %b %d")%></p>
+    <p class="desc"><%= filteredPosts[2].content.truncate_words(20) %> </p>
     <% end %>
 
 
@@ -50,7 +34,8 @@
     <%= link_to filteredPosts[3] do %>
       <%= image_tag (filteredPosts[3].thumbnail.url(:large)), class: "home_image" %>
       <h3><a href="#"><%= link_to filteredPosts[3].title, filteredPosts[3] %></a></h3>
-      <p><%= filteredPosts[3].content.truncate_words(20) %> </p>
+      <p><%= filteredPosts[3].created_at.strftime("%A, %b %d")%></p>
+      <p class="desc"><%= filteredPosts[3].content.truncate_words(20) %> </p>
       <% end %>
 
 

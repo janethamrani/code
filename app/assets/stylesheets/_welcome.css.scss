@@ -88,6 +88,11 @@ left: 0;
 
 
 
+
+
+
+
+
 .trending {
   //background-color: #f8f8f8;
 
@@ -360,6 +365,41 @@ margin-left: 170px;
     color: $highlight;
     font-weight: 700;
     text-decoration: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.trending-new{
+  flex-grow: 300;
+  flex-shrink: 300;
+  h3 {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+  }
+  p{
+    margin: 0 0 1.6em 0;
+  }
+  .desc{
+    color: #555;
+    font-size: 0.9em !important;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
   }
 
 }
