@@ -381,6 +381,11 @@ margin-left: 170px;
 
 
 .trending-new{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
   flex-grow: 300;
   flex-shrink: 300;
   h3 {
@@ -401,5 +406,4 @@ margin-left: 170px;
     -webkit-line-clamp: 2;
     text-overflow: ellipsis;
   }
-
 }
