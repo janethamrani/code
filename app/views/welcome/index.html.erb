@@ -31,7 +31,7 @@
           <%= image_tag (filteredPosts[1].thumbnail.url(:large)), class: "home_image" %>
           <h3><a href="#"><%= link_to filteredPosts[1].title, filteredPosts[1] %></a></h3>
           <p><%= filteredPosts[1].created_at.strftime("%A, %b %d")%></p>
-          <p class="desc"><%= simple_format(filteredPosts[1].content[3,200]) %> </p>
+          <p class="desc"><%= markdown(filteredPosts[0].content[3,300]) %> </p>
           <% end %>
         </div>
         <div class="one-article" style="width: 33%;">
@@ -39,7 +39,7 @@
           <%= image_tag (filteredPosts[2].thumbnail.url(:large)), class: "home_image" %>
           <h3><a href="#"><%= link_to filteredPosts[2].title, filteredPosts[2] %></a></h3>
           <p><%= filteredPosts[2].created_at.strftime("%A, %b %d")%></p>
-          <p class="desc"><%= filteredPosts[2].content[3,200]) %> </p>
+          <p class="desc"><%= markdown(filteredPosts[0].content[3,300]) %> </p>
           <% end %>
         </div>
         <div class="one-article" style="width: 33%;">
@@ -47,7 +47,7 @@
             <%= image_tag (filteredPosts[3].thumbnail.url(:large)), class: "home_image" %>
             <h3><a href="#"><%= link_to filteredPosts[3].title, filteredPosts[3] %></a></h3>
             <p><%= filteredPosts[3].created_at.strftime("%A, %b %d")%></p>
-            <p class="desc"><%= filteredPosts[3].content[3,200]) %> </p>
+            <p class="desc"><%= markdown(filteredPosts[0].content[3,300]) %> </p>
             <% end %>
         </div>
     </div>
