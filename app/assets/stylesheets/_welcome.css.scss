@@ -431,8 +431,8 @@ margin-left: 170px;
 }
 
 
-@media (max-width: 1190px) {
-  #under_post{
-    font-size: 10px;
+@media (max-width: 375) {
+  .featured_img{
+    height: 300px;
   }
 }
