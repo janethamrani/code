@@ -420,6 +420,7 @@ margin-left: 170px;
       margin: 0;
       color: black;
       float: none;
+      height: 114px;
       h3{
         letter-spacing: normal;
         font-size: 29px;
@@ -427,6 +428,10 @@ margin-left: 170px;
         margin-left: 5px;
         width: 95%;
         text-align: left;
+        border: 0px;
+        color: black;
+        display: block;
+        font-weight: 700;
       }
       #under_post{
         visibility: hidden;
