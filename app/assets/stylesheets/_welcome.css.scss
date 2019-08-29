@@ -8,7 +8,12 @@
 @import url('https://fonts.googleapis.com/css?family=Markazi+Text');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Quicksand&display=swap');
 
-
+@font-face {
+font-family: 'Audrey Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Audrey Regular'), url('Audrey-Normal.woff') format('woff');
+}
 
 #welcome_posts {
   margin-top: -30px;
@@ -104,7 +109,7 @@ hr{
       color: #e69e8f;
       text-align: center;
       margin-left: 450px;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Audrey Regular';
       font-size: 25px;
       padding-top: 490px;
       font-weight: normal;
@@ -409,6 +414,9 @@ margin-left: 170px;
 //iphone x
 @media (max-width: 376px) {
   .featured_img{
+    a{
+      height: 300px;
+    }
     .featured_img1{
       width: 100%;
       display: block;
@@ -420,7 +428,7 @@ margin-left: 170px;
       margin: 0;
       color: black;
       float: none;
-      height: 114px;
+      width: 100%;
       h3{
         letter-spacing: normal;
         font-size: 29px;
@@ -430,8 +438,12 @@ margin-left: 170px;
         text-align: left;
         border: 0px;
         color: black;
-        display: block;
+        display: flex;
         font-weight: 700;
+        a{
+          color: black;
+          width: 95%;
+        }
       }
       #under_post{
         visibility: hidden;
