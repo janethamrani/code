@@ -420,7 +420,7 @@ margin-left: 170px;
     .featured_img1{
       width: 100%;
       display: block;
-      height: 300px;
+      //height: 300px;
       margin: 0;
     }
     .main_hdr {
@@ -431,7 +431,7 @@ margin-left: 170px;
       width: 100%;
       h3{
         letter-spacing: normal;
-        font-size: 29px;
+        font-size: 32px;
         margin-top: 10px;
         margin-left: 5px;
         width: 95%;
@@ -439,6 +439,7 @@ margin-left: 170px;
         border: 0px;
         color: black;
         display: flex;
+        padding-top: 10px;
         font-weight: 700;
         a{
           color: black;
