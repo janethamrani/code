@@ -434,5 +434,8 @@ margin-left: 170px;
 @media (max-width: 375px) {
   .featured_img{
     height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
   }
 }
