@@ -420,7 +420,7 @@ margin-left: 170px;
     .featured_img1{
       width: 100%;
       display: block;
-      //height: 300px;
+      height: 300px;
       margin: 0;
     }
     .main_hdr {
@@ -432,7 +432,7 @@ margin-left: 170px;
       h3{
         letter-spacing: normal;
         font-size: 32px;
-        margin-top: 10px;
+        //margin-top: 10px;
         margin-left: 5px;
         width: 95%;
         text-align: left;
@@ -453,6 +453,7 @@ margin-left: 170px;
     }
   }
   .flex--welcome{
+    margin-top: 300px;
     .section{
       display: flex;
       flex-direction: column;
