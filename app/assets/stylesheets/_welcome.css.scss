@@ -10,35 +10,6 @@
 
 
 
-
-/*.left_featured{
-  position: absolute;
-  text-align: center;
-  margin-left: -50px;
-  margin-bottom: 20px;
-  border-style: solid;
-  border-color: #8B008B;
-  border-width: 5px;
-
-  h5{
-    margin-top: 3px;
-    width: 200px;
-    margin-left: 35px;
-    font-family: 'Markazi Text', serif;
-    padding-bottom: 10px;
-    font-size: 25px;
-    letter-spacing: 1.5px;
-
-
-
-  }
-  a {
-    text-decoration: none;
-    width: 100px;
-    color: $dark;
-  }
-}*/
-
 #welcome_posts {
   margin-top: -30px;
 }
@@ -46,7 +17,6 @@
 
 h3 {
   font-family: 'Satisfy', cursive;
-  //text-transform: lowercase;
   text-align: left;
   font-size: 50px;
   display: flex;
@@ -66,20 +36,20 @@ hr{
 
 .hr_color1, .hr_color2, .hr_color3{
   width: 100%;
-  margin-top: 1100px;
+  margin-top: 10px;
   background-color: #fb958b;
-left: 0;
- height: 10px;
+  left: 0;
+  height: 10px;
   position: absolute;
   padding-bottom: 0;
 }
 
 .hr_color2{
-  margin-top: 1110px;
+  margin-top: 20px;
   background-color: #f7a583;
 }
 .hr_color3{
-  margin-top: 1120px;
+  margin-top: 30px;
   background-color: #f7baa1;
 }
 
@@ -123,8 +93,7 @@ left: 0;
     font-size: 40px;
   }
   #under_post{
-    border: none;
-      /* margin-top: 49px; */
+      border: none;
       color: #e69e8f;
       text-align: center;
       margin-left: 450px;
@@ -152,7 +121,7 @@ left: 0;
   a{
     font-family: 'Playfair Display', serif;
 
-    background: rgba(256,256,256, 0.8);
+    //background: rgba(256,256,256, 0.8);
     text-transform: capitalize;
     text-decoration: none;
     color: #c2656d;
@@ -430,12 +399,49 @@ margin-left: 170px;
   }
 }
 
-
+//iphone x
 @media (max-width: 376px) {
   .featured_img{
-    height: 300px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+    img{
+      width: 100%;
+      display: block;
+      height: 300px;
+      margin: 0;
+    }
+    .main_hdr {
+      display: block;
+      margin: 0;
+      color: black;
+      float: none;
+      h3{
+        letter-spacing: normal;
+        font-size: 29px;
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 95%;
+        text-align: left;
+      }
+      #under_post{
+        visibility: hidden;
+        padding-top: 50px;
+      }
+    }
   }
+  .flex--welcome{
+    .section{
+      display: flex;
+      flex-direction: column;
+      .one-article{
+        width: 100%;
+        margin-top: -60px;
+        .home_image{
+          height: 300px;
+        }
+      }
+    }
+  }
+
+
+
+
 }
