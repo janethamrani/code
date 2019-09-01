@@ -460,25 +460,27 @@ margin-left: 170px;
       flex-direction: row;
       .one-article{
         width: 100%;
-        margin-top: -90px;
+        padding: 0;
+        margin-top: -120px;
         height: 200px;
         .home_image{
           height: 100px;
+          padding: 0;
           width: 100%;
         }
         h3 {
           padding-top: 0;
           font-family: 'Audrey Regular';
-          text-align: center;
+          text-align: left;
           font-size: 10px;
           display: flex;
           flex-direction: column;
           letter-spacing: 1px;
         }
-        a{
+        a {
           font-size: 10px;
         }
-        p{
+        p {
           visibility: hidden;
         }
       }
