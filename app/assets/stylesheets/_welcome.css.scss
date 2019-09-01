@@ -379,7 +379,6 @@ margin-left: 170px;
     .one-article {
         width: 33%;
         padding: 20px;
-        background-color: #f8f8f8;
       .home_image {
         width: 100%;
         height: 416px;
@@ -476,10 +475,19 @@ margin-left: 170px;
           flex-direction: column;
           letter-spacing: 1px;
         }
+        a{
+          font-size: 10px;
+        }
+        .desc{
+          visibility: hidden;
+
+        }
       }
     }
   }
-
+ #footer{
+   visibility: hidden;
+ }
 
 
 
