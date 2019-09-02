@@ -88,11 +88,11 @@
       <div class="post" id="welcome_post">
         <div class="flex">
 
-
+      <%= image_tag (post.thumbnail.url(:large)), class: "posts_show_img", id: "posts_show_img_wel"%>
       <p class="date_trending" id="date_trending_wel"><%= post.created_at.strftime('%A, %B %d') %></p>
       <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
         </div>
-      <%= image_tag (post.thumbnail.url(:large)), class: "posts_show_img", id: "posts_show_img_wel"%>
+
       <% post.category_id do |category| %>
       <li>
       <%= link_to category.name, posts_path(category: category.name) %>
