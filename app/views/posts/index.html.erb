@@ -50,18 +50,20 @@
   <div class="articles-show">
     <div class="flex">
       <div class="container">
-        <div class="whole_post">
-          <% @posts.approved.each do |post| %>
-          <div class="container_image">
-            <%= image_tag (post.thumbnail.url(:large))%>
-          </div>
-          <div class="post_content">
-            <p class="post_date"><%= post.created_at.strftime('%A, %B %d') %></p>
-            <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
 
-          </div>
+          <% @posts.approved.each do |post| %>
+            <div class="whole_post">
+                <div class="container_image">
+                  <%= image_tag (post.thumbnail.url(:large))%>
+                </div>
+                <div class="post_content">
+                  <p class="post_date"><%= post.created_at.strftime('%A, %B %d') %></p>
+                  <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
+
+                </div>
+          </div> 
           <% end %>
-        </div>
+
       </div>
 
     </div>
