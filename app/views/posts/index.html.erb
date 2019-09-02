@@ -12,8 +12,10 @@
                 </div>
                 <div class="post_content">
                   <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
-                  <p class="post_date"><%= post.created_at.strftime('%A, %B %d') %></p>
-                  <p class="post_date">BY <%= post.user.full_name %></p>
+                  <div class="post_index_details">
+                    <p class="post_date"><%= post.created_at.strftime('%A, %B %d') %></p>
+                    <p class="post_date">BY <%= post.user.full_name %></p>
+                  </div>
                 </div>
            </div>
           <% end %>
