@@ -118,7 +118,34 @@
   }
 }
 
-
+.whole_post{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .container_image{
+    width: 40%;
+  }
+  .post_content{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    width: 60%;
+    .post_date {
+      text-align: center;
+      margin: 0;
+      font-size: 15px;
+      color: lightgray;
+    }
+    h2{
+      margin: 0;
+      text-align: center;
+      padding: 10px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
 
 
 .skinny_wrapper {
@@ -160,7 +187,7 @@ header{
     width: 80%;
   //  padding: 20px;
     text-align: center;
-    
+
   //  top: 30%;
     text-decoration: none;
   //  left: 50%;

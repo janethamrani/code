@@ -13,7 +13,7 @@
 
  <!--<hr class="banner_hr">-->
 
-
+<!--
  <div class="recent_posts" id="post_total">
 
 
@@ -45,7 +45,27 @@
 
 
    </div>
- </div>
+ </div> -->
+
+
+<div class="whole_post">
+  <% @posts.approved.each do |post| %>
+  <div class="container_image">
+    <%= image_tag (post.thumbnail.url(:large))%>
+  </div>
+  <div class="post_content">
+    <p class="post_date"><%= post.created_at.strftime('%A, %B %d') %></p>
+    <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
+
+  </div>
+
+</div>
+
+
+
+
+
+
 
 
 
