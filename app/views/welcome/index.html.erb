@@ -26,7 +26,7 @@
 <div class="flex--welcome">
     <div class="trending-new">
       <div class="section">
-        <div class="one-article" style="width: 33%; padding: 20px;">
+        <div class="one-article" style="width: 33%;">
           <%= link_to filteredPosts[1] do %>
           <%= image_tag (filteredPosts[1].thumbnail.url(:large)), class: "home_image" %>
           <h3><a href="#"><%= link_to filteredPosts[1].title, filteredPosts[1] %></a></h3>
