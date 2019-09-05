@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 
 
@@ -130,19 +131,28 @@
     margin-right: auto;
     margin-top: -20px;
     width: 60%;
+    .post_index_details{
+      display: flex;
+      margin-left: 250px;
     .post_date {
       text-align: center;
       margin: 0;
       font-size: 15px;
       color: lightgray;
     }
+  }
     h2{
       margin: 0;
       text-align: center;
       padding: 10px;
       width: 80%;
+      font-family: 'Open Sans', sans-serif;
       margin-left: auto;
       margin-right: auto;
+    }
+    a{
+      font-family: 'Open Sans', sans-serif;
+      text-decoration: none;
     }
   }
 }
