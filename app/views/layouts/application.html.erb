@@ -7,7 +7,7 @@
         <title>consonancie</title>
     <% end %>
 
-    <title>consonancie</title>
+    <title>Consonancie</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -16,6 +16,19 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script>
+      function openSlideMenu(){
+        document.getElementById('menu').style.width = '250px';
+        document.getElementById('page-container').style.marginLeft = '250px';
+      }
+      function closeSlideMenu(){
+        document.getElementById('menu').style.width = '0';
+        document.getElementById('page-container').style.marginLeft = '0';
+      }
+    </script>
+
+
+
   </head>
 
   <body>
@@ -41,6 +54,10 @@
         <a href="#" class="close" onclick="closeSlideMenu()">
           <i class="fas fa-times"></i>
         </a>
+        <a href="/posts?category=Beauty">Beauty</a>
+        <a href="/posts?category=Lifestyle">Lifestyle</a>
+        <a href="/posts?category=Entertainment">Entertainment</a>
+        <a href="/posts?category=News">News</a>
 
       </div>
 
