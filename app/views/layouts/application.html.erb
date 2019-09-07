@@ -4,7 +4,7 @@
     <% if content_for?(:head) %>
         <%= yield(:head) %>
     <% else %>
-        <title>consonancie</title>
+        <title>Consonancie</title>
     <% end %>
 
     <title>Consonancie</title>
@@ -18,10 +18,10 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script>
       function openSlideMenu(){
-        document.getElementById('menu').style.width = '500px';
-        document.getElementById('page-container').style.marginLeft = '500px';
+        document.getElementById('menu').style.width = '250px';
+        document.getElementById('page-container').style.marginLeft = '250px';
       }
-      function closeSlideMenu(){
+      function closeSideMenu(){
         document.getElementById('menu').style.width = '0';
         document.getElementById('page-container').style.marginLeft = '0';
       }
