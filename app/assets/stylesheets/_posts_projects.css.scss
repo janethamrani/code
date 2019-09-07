@@ -126,15 +126,18 @@
   align-items: center;
   .container_image{
     width: 40%;
+    img{
+      width: 100%;
+    }
   }
   .post_content{
-    margin-left: auto;
+    margin-left: -80px;
     margin-right: auto;
     margin-top: -20px;
     width: 60%;
     .post_index_details{
       display: flex;
-      margin-left: 250px;
+      margin-left: 285px;
       font-family: 'Roboto', sans-serif;
     .post_date {
       text-align: center;
@@ -149,7 +152,9 @@
       padding: 10px;
       width: 80%;
       font-family: 'Open Sans', sans-serif;
-      margin-left: auto;
+      font-weight: lighter;
+
+      margin-left: 130px;
       margin-right: auto;
     }
     a{
