@@ -54,7 +54,7 @@ $white: #FFFFFF;
 
   color: white;
   top: 65%;
-  left: 50%;
+  left: 52%;
   margin-left: -150px;
   transform: translate(-90%, -95%);
   a {
@@ -258,6 +258,16 @@ hr {
   padding-top: 60px;
   transition: all ease-in-out 200ms;
   -webkit-transition: all ease-in-out 200ms;
+}
+.fa-bars {
+  color: black;
+  cursor: pointer;
+  z-index: 10000000;
+  margin-top: 43px;
+  margin-left: 40px;
+  font-size: 25px;
+  position: absolute;
+
 }
 .nav a{
   display: block;
