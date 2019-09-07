@@ -30,28 +30,16 @@
      <h3 id="img_overlay"><%= link_to "consonancie", root_path%></h3> -->
 
 
-     <div class="sidebar_menu hide_menu" style="background-color: #65B19D;">
-       <i class="fa fa-times"></i>
-       <h1><%= link_to "Consonancie", root_path %></h1>
-       <li class="list_item"><a href="/posts?category=Beauty">Beauty</a></li>
-       <li class="list_item"><a href="/posts?category=Lifestyle">Lifestyle</a></li>
-       <li class="list_item"><a href="/posts?category=Entertainment">Entertainment</a></li>
-       <li class="list_item"><a href="/posts?category=News">News</a></li>
-       <a href="/contacts/new">Contact</a>
-       <% if current_user && (current_user.admin?) %>
-         <%= link_to "Users", users_path %>
-       <% end %>
-       <% if user_signed_in? %>
-          <%= link_to "Dashboard", user_path(current_user) %>
-          <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-      <% else %>
-          <a href="/apply">Apply</a>
-       <% end %>
-       <div style="height: 2000px; background-color: #65B19D;">
-       </div>
-     </div>
+    <div class="sidebar">
+      <span class="slide">
+        <a href="#" onclick="openSlideMenu()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </span>
 
+      
 
+    </div>
 
  <header id="main_navigation" class="clearfix">
  <nav>
