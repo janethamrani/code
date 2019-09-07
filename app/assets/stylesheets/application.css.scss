@@ -256,8 +256,8 @@ hr {
   opacity: .9;
   overflow-x: hidden;
   padding-top: 60px;
-  transition: all ease-in-out 200ms;
-  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 10s;
+  -webkit-transition: all ease-in-out 10ms;
 }
 .nav a{
   display: block;
