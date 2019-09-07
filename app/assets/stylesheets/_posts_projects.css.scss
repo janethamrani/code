@@ -324,27 +324,31 @@ header{
     color: #b47775;
     text-align: center;
   }
-  .whole_post {
-    flex-direction: column;
-    margin-bottom: 50px;
-    .container_image{
-      width: 100%;
-      margin: 0;
-    }
-    .post_content {
-      width: 95%;
-      margin: 0;
-      margin-bottom: 10px;
-      .post_index_details {
-        margin-top: -10px;
-        margin-left: 0;
-        margin-right: 0;
+  .container_show{
+    width: 100%;
+    .whole_post {
+      flex-direction: column;
+      margin-bottom: 50px;
+      .container_image{
+        width: 100%;
+        margin: 0;
+      }
+      .post_content {
+        width: 95%;
+        margin: 0;
+        margin-bottom: 10px;
+        .post_index_details {
+          margin-top: -10px;
+          margin-left: 0;
+          margin-right: 0;
 
+        }
       }
     }
-  }
+}
 
 }
+
 // - - - - Pagination
 
 //fix colons
