@@ -261,6 +261,9 @@ hr {
   #side-nav-title{
     margin: 0;
     color: $highlight;
+    a {
+      color: $highlight;
+    }
   }
 }
 .fa-bars {
