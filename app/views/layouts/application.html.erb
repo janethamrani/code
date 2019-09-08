@@ -62,6 +62,16 @@
         <a href="/posts?category=Entertainment">Entertainment</a>
         <a href="/posts?category=News">News</a>
 
+      <% if user_signed_in? %>
+         <%= link_to "Dashboard", user_path(current_user) %>
+         <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+     <% else %>
+         <a href="/apply">Apply</a>
+         <a href="/login" id="login">Log In</a>
+
+
+      <% end %>
+
       </div>
 
     </div>
