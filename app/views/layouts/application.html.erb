@@ -20,7 +20,7 @@
       function openSlideMenu(){
         document.getElementById('menu').style.width = '250px';
         document.getElementById('page-container').style.marginLeft = '250px';
-        document.getElementById('img_overlay').style.marginLeft = '-140px';
+        document.getElementById('img_overlay').style.marginLeft = '-125px';
 
       }
       function closeSlideMenu(){
@@ -56,6 +56,7 @@
         <a href="#" class="close" onclick="closeSlideMenu()">
           <i class="fas fa-times"></i>
         </a>
+        <h3 id="img_overlay"><%= link_to "Consonancie", root_path%></h3>
         <a href="/posts?category=Beauty">Beauty</a>
         <a href="/posts?category=Lifestyle">Lifestyle</a>
         <a href="/posts?category=Entertainment">Entertainment</a>
