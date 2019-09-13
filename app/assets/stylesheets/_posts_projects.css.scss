@@ -203,27 +203,21 @@ header{
     color: gray;
   }
   h1{
-  //  position: absolute;
     background: rgba(255, 255, 255, 0.9);
-    width: 80%;
-  //  padding: 20px;
     text-align: center;
-
-  //  top: 30%;
     text-decoration: none;
-  //  left: 50%;
-    //transform: translate(-50%, -50%);
     font-size: 5em;
-    //text-align: center;
     position: relative;
     font-family: 'Playfair Display', serif;
     color: $highlight;
     font-size: 30px;
-    margin-left: 120px;
+    width: auto;
     margin-top: -40px;
     text-transform: capitalize;
-
-    font-weight: bold; border: 3px solid #f1f1f1; z-index: 2;  padding: 20px;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    z-index: 2;
+    padding: 20px;
   }
   .author {
     font-family: 'Playfair Display', serif;
@@ -237,6 +231,9 @@ header{
   h2, h3, h4, h5, h6{
     font-family: 'Fjalla One', sans-serif;
     letter-spacing: 1px;
+
+  }
+  .post_title{
 
   }
   hr {
