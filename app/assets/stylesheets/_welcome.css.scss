@@ -80,26 +80,25 @@ hr{
 }
 
 .featured_img {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
   height: 650px;
 
   .featured_img1{
-    width: 85%;
     display: block;
+    width: 45%;
     height: 600px;
-    margin-left: -10px;
-    margin-top: 10px;
-    margin-right: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
 .main_hdr {
   display: flex;
   flex-direction: column;
   margin-top: -13.9em;
-  /* padding-bottom: 570px; */
   color: #000000;
-  margin-left: 600px;
+  width: 49%;
+  margin-right: 20px;
+  /* margin-left: 600px; */
+  margin-bottom: -150px;
   float: right;
   #title_main{
     font-size: 40px;
@@ -407,6 +406,30 @@ hr{
     font-family: 'Audrey Regular';
   }
 }
+@media (max-width: 703px) {
+  .flex--welcome{
+    .section{
+      height: 350px;
+      .one-article{
+        padding: 5px;
+        h3{
+          padding-top: 0;
+        }
+        a {
+          font-size: 15px;
+        }
+        .desc{
+          visibility: hidden;
+
+        }
+        .home_image{
+          height: 316px;
+        }
+      }
+    }
+  }
+}
+}
 
 @media (max-width: 1199px) {
   .flex--welcome{
@@ -419,8 +442,6 @@ hr{
     }
   }
 }
-
-
 
 
 //iphone x
