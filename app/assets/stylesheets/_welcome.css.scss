@@ -391,6 +391,7 @@ hr{
         flex-direction: column;
         color: #000000;
         padding-bottom: 0px;
+        padding-top: 0;
         //letter-spacing: 3px;
 
       }
@@ -408,7 +409,7 @@ hr{
     font-family: 'Audrey Regular';
   }
 }
-@media (max-width: 703px) {
+@media (max-width: 830px) {
   .flex--welcome{
     .section{
       height: 350px;
@@ -446,7 +447,7 @@ hr{
 
 
 //iphone x
-@media (max-width: 376px) {
+@media (max-width: 500px) {
   .nav {
     .list_stuff {
       visibility: hidden;
