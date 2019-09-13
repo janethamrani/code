@@ -408,6 +408,21 @@ hr{
   }
 }
 
+@media (max-width: 1199px) {
+  .flex--welcome{
+    .section{
+      .one-article{
+        .home_image{
+          height: 316px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
 //iphone x
 @media (max-width: 376px) {
   .nav {
