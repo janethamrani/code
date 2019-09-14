@@ -103,7 +103,21 @@ hr{
   #title_main{
     font-size: 40px;
   }
-  #under_post{
+
+#under_post{
+    border: none;
+    /* margin-top: 49px; */
+    color: #e69e8f;
+    text-align: center;
+    margin-left: 450px;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    padding-top: 490px;
+    font-weight: normal;
+    padding-right: 20px;
+    height: 0;
+    width: auto;
+}
 
 
 .featured_img .main_hdr #under_post {
@@ -147,7 +161,7 @@ hr{
     margin-top: -20em;
   }
 }
-}
+
 }
 
 .main_hdr a:hover{
