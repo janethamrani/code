@@ -429,6 +429,20 @@ hr{
   }
 }
 
+//iphone se
+@media (max-width: 330px){
+  .featured_img .main_hdr h3 {
+    letter-spacing: normal;
+    text-align: left;
+    border: 0px;
+    margin-bottom: 0;
+    color: black;
+    height: 580px;
+    display: flex;
+    padding-top: 10px;
+    font-weight: lighter;
+  }
+}
 
 @media (max-width: 1345px){
   #img_overlay {
@@ -656,7 +670,7 @@ hr{
     }
   }
   .flex--welcome{
-    height: auto;
+    height: 90px;
     //padding-top: 50px;
     margin-top: 440px;
     .section{
