@@ -483,8 +483,112 @@ hr{
   }
 }
 
-//iphone x
 @media (max-width: 972px) {
+  nav {
+    .list_stuff {
+      display: none;
+    }
+
+  }
+
+  #img_overlay{
+    font-family: monospace;
+    position: absolute;
+    width: 40%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: -10px;
+    color: white;
+    top: 65%;
+    left: 52%;
+    //margin-left: 30px;
+    transform: translate(-90%, -95%);
+  }
+  .featured_img{
+    height: auto;
+    a{
+      height: 300px;
+    }
+    .featured_img1{
+      width: 100%;
+      display: block;
+      height: auto;
+      margin: 0;
+    }
+    .main_hdr {
+      display: block;
+      margin: 0;
+      color: black;
+      float: none;
+      width: 100%;
+      h3{
+        letter-spacing: normal;
+        font-size: 32px;
+        //margin-top: 10px;
+        margin-left: 5px;
+        line-height: 40px;
+        width: 95%;
+        text-align: left;
+        border: 0px;
+        color: black;
+        display: flex;
+        padding-top: 10px;
+        font-weight: lighter;
+        a{
+          color: black;
+          width: 100%;
+          /* letter-spacing: 1px; */
+          line-height: 50px;
+          padding-top: 0;
+          //margin-top: -15px;
+        }
+      }
+      #under_post{
+        visibility: hidden;
+        padding-top: 50px;
+      }
+    }
+  }
+  .flex--welcome{
+    //padding-top: 50px;
+    margin-top: 440px;
+    .section{
+      display: flex;
+      flex-direction: row;
+      .one-article{
+        width: 100%;
+        padding: 0;
+        margin-top: -120px;
+        height: 200px;
+        .home_image{
+          height: 300px;
+          padding: 0;
+          width: 100%;
+        }
+        h3 {
+          padding-top: 0;
+          font-family: 'Audrey Regular';
+          text-align: left;
+          font-size: 10px;
+          display: flex;
+          flex-direction: column;
+          letter-spacing: 1px;
+        }
+        a {
+          font-size: 18px;
+          text-align: center;
+          font-weight: 200;
+        }
+        p {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}
+//iphone x
+@media (max-width: 500px) {
   nav {
     .list_stuff {
       display: none;
