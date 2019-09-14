@@ -483,12 +483,11 @@ hr{
   }
 }
 
-
 //iphone x
 @media (max-width: 972px) {
   .nav {
     .list_stuff {
-      visibility: hidden;
+      display: none;
     }
   }
   #img_overlay{
