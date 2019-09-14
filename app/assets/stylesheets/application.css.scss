@@ -23,40 +23,40 @@ $white: #FFFFFF;
 
 }
 
-.sm-wrapper{
-  margin-top: 100px;
-}
-.sidemenu {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #ffb89c;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-.sidemenu a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 45px;
-  text-transform: uppercase;
-  font-family: 'Roboto';
-  color: $highlight;
-  display: block;
-  letter-spacing: 50px;
-  margin-bottom: 20px;
-  transition: 0.3s;
-}
-.sidemenu .close{
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 95px;
-  margin-left: 50px;
-}
+// .sm-wrapper{
+//   margin-top: 100px;
+// }
+// .sidemenu {
+//   height: 100%;
+//   width: 0;
+//   position: fixed;
+//   z-index: 1;
+//   top: 0;
+//   left: 0;
+//   background-color: #ffb89c;
+//   overflow-x: hidden;
+//   transition: 0.5s;
+//   padding-top: 60px;
+// }
+// .sidemenu a {
+//   padding: 8px 8px 8px 32px;
+//   text-decoration: none;
+//   font-size: 45px;
+//   text-transform: uppercase;
+//   font-family: 'Roboto';
+//   color: $highlight;
+//   display: block;
+//   letter-spacing: 50px;
+//   margin-bottom: 20px;
+//   transition: 0.3s;
+// }
+// .sidemenu .close{
+//   position: absolute;
+//   top: 0;
+//   right: 25px;
+//   font-size: 95px;
+//   margin-left: 50px;
+// }
 // .sm-wrapper a:after{
 //   z-index: -1;
 //   position: absolute;
@@ -64,25 +64,25 @@ $white: #FFFFFF;
 //   width: 0;
 //   height: 50px;
 // }
-
-#pg-content{
-  transition: margin-left 0.5s;
-  padding: 16px;
-}
-h1 {
-  font-family: 'Roboto';
-  font-size: 10em;
-  text-align: center;
-  letter-spacing: 50px;
-  padding: 100px 0px 100px 25px;
-  color: $highlight;
-}
-span{
-  letter-spacing: 50px;
-  padding-left: 44px;
-  color: $highlight;
-
-}
+// 
+// #pg-content{
+//   transition: margin-left 0.5s;
+//   padding: 16px;
+// }
+// h1 {
+//   font-family: 'Roboto';
+//   font-size: 10em;
+//   text-align: center;
+//   letter-spacing: 50px;
+//   padding: 100px 0px 100px 25px;
+//   color: $highlight;
+// }
+// span{
+//   letter-spacing: 50px;
+//   padding-left: 44px;
+//   color: $highlight;
+//
+// }
 
 
 #main_img {
