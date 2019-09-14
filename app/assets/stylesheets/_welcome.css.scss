@@ -553,6 +553,7 @@ hr{
   .flex--welcome{
     //padding-top: 50px;
     margin-top: 440px;
+    height: 300px;
     .section{
       display: flex;
       flex-direction: row;
@@ -655,6 +656,7 @@ hr{
     }
   }
   .flex--welcome{
+    height: auto;
     //padding-top: 50px;
     margin-top: 440px;
     .section{
