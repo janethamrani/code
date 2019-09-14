@@ -85,7 +85,7 @@ hr{
 
   .featured_img1{
     display: block;
-    width: 45%;
+    width: 42%;
     height: 600px;
     margin-left: 30px;
     margin-top: 30px;
@@ -485,7 +485,7 @@ hr{
 
 
 //iphone x
-@media (max-width: 500px) {
+@media (max-width: 972px) {
   .nav {
     .list_stuff {
       visibility: hidden;
@@ -537,7 +537,11 @@ hr{
         font-weight: lighter;
         a{
           color: black;
-          width: 95%;
+          width: 100%;
+          /* letter-spacing: 1px; */
+          line-height: 50px;
+          padding-top: 0;
+          //margin-top: -15px;
         }
       }
       #under_post{
@@ -547,7 +551,8 @@ hr{
     }
   }
   .flex--welcome{
-    margin-top: 360px;
+    //padding-top: 50px;
+    margin-top: 440px;
     .section{
       display: flex;
       flex-direction: row;
