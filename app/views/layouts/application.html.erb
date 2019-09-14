@@ -17,16 +17,28 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script>
-      function openSM(){
-        document.getElementById("mySideMenu").style.width = "450px";
-        document.getElementById("pg-content").style.marginLeft = "450px";
-      }
-      function closeSM(){
-        document.getElementById("mySideMenu").style.width = "0";
-        document.getElementById("pg-content").style.width = "0";
+      function openSlideMenu(){
+        document.getElementById('menu').style.width = '250px';
+        document.getElementById('page-container').style.marginLeft = '250px';
+        document.getElementById('img_overlay').style.marginLeft = '-125px';
 
       }
-
+      function closeSlideMenu(){
+        document.getElementById('menu').style.width = '0';
+        document.getElementById('page-container').style.marginLeft = '0';
+      }
+      // <script>
+      //   function openSM(){
+      //     document.getElementById("mySideMenu").style.width = "450px";
+      //     document.getElementById("pg-content").style.marginLeft = "450px";
+      //   }
+      //   function closeSM(){
+      //     document.getElementById("mySideMenu").style.width = "0";
+      //     document.getElementById("pg-content").style.width = "0";
+      //
+      //   }
+      //
+      // </script>
     </script>
 
 
@@ -37,37 +49,13 @@
     <div id="page-container">
       <div id="content-wrap">
 
-        <div class="mySideMenu" class="sideMenu">
-          <a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
-          <div class="sm-wrapper">
-            <h3 id="side-nav-title"><%= link_to "Consonancie", root_path%></h3>
-            <a href="/posts?category=Beauty">Beauty</a>
-            <a href="/posts?category=Lifestyle">Lifestyle</a>
-            <a href="/posts?category=Entertainment">Entertainment</a>
-            <a href="/posts?category=News">News</a>
 
-          <% if user_signed_in? %>
-             <%= link_to "Dashboard", user_path(current_user) %>
-             <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-         <% else %>
-             <a href="/apply">Apply</a>
-             <a href="/login" id="login">Log In</a>
+    <%= link_to "consonancie", root_path, class: "name" %>
+   <h3 id="img_logo">consonancie</h3>
+     <h3 id="img_overlay"><%= link_to "consonancie", root_path%></h3>
 
 
-          <% end %>
-
-          </div>
-          <div id="page-content" onclick="openSM()">&#9776;</div>
-
-        </div>
-
-
-  <!--   <%= link_to "consonancie", root_path, class: "name" %>-->
-  <!--   <h3 id="img_logo">consonancie</h3>
-     <h3 id="img_overlay"><%= link_to "consonancie", root_path%></h3> -->
-
-
-    <!-- <div id="sidebar">
+     <div id="sidebar">
       <span class="slide">
         <i class="fa fa-bars toggle_menu" style="color: black;" onclick="openSlideMenu()"></i>
 
@@ -96,7 +84,7 @@
 
       </div>
 
-    </div> -->
+    </div>
 
  <header id="main_navigation" class="clearfix">
  <nav>
