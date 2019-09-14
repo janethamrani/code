@@ -104,16 +104,20 @@ hr{
     font-size: 40px;
   }
   #under_post{
-      border: none;
-      color: #e69e8f;
-      text-align: center;
-      margin-left: 450px;
-      font-family: 'Audrey Regular';
-      font-size: 25px;
-      padding-top: 490px;
-      font-weight: normal;
-      padding-right: 20px;
-      height: 0;
+
+
+.featured_img .main_hdr #under_post {
+  border: none;
+  color: #e69e8f;
+  text-align: center;
+  margin-left: 480px;
+  font-family: 'Audrey Regular';
+  font-size: 25px;
+  padding-top: 490px;
+  font-weight: normal;
+  padding-right: 20px;
+  height: 0;
+  width: auto;
 }
 
 
@@ -407,6 +411,23 @@ hr{
     font-size: 12px;
     margin-bottom: 5px;
     font-family: 'Audrey Regular';
+  }
+}
+@media (max-width: 1345px){
+  #img_overlay {
+    left: 56%;
+  }
+  .featured_img{
+    .main_hdr{
+      a {
+        font-size: 45px;
+      }
+      #under_post{
+        font-size: 22px;
+        padding-top: 430px;
+
+      }
+    }
   }
 }
 @media (max-width: 830px) {
