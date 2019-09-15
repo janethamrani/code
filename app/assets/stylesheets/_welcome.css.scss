@@ -582,8 +582,10 @@ hr{
           margin-left: 2px;
           text-transform: uppercase;
         }
+      }
     }
   }
+
   .flex--welcome{
     //padding-top: 50px;
     margin-top: 440px;
@@ -617,10 +619,11 @@ hr{
         }
         p {
           visibility: hidden;
+          }
         }
       }
     }
-  }
+
 }
 //iphone x
 @media (max-width: 500px) {
