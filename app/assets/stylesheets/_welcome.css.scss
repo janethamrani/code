@@ -562,6 +562,26 @@ hr{
         visibility: hidden;
         padding-top: 50px;
       }
+      .post_index_details{
+        /* position: absolute; */
+        /* top: 1000px; */
+        color: black;
+        display: flex;
+        margin-top: 40px;
+        MARGIN-LEFT: 10px;
+        /* display: none;*/
+        p{
+          margin: 10px;
+          /* margin-left: -450px; */
+          /* margin-top: -200px; */
+          margin-right: 20px;
+          font-family: 'Roboto';
+          letter-spacing: 2px;
+          margin-bottom: 0;
+          /* display: none; */
+          margin-left: 2px;
+          text-transform: uppercase;
+        }
     }
   }
   .flex--welcome{
