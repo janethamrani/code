@@ -14,7 +14,12 @@
     <div class="main_hdr">
 
       <h3><a href="#"><%= link_to filteredPosts[0].title, filteredPosts[0] %></a> </h3>
+      <div class="post_index_details">
+        <p class="post_date"><%= post.created_at.strftime('%A, %B %d') %></p>
+        <p class="post_date">BY <%= post.user.full_name %></p>
+      </div>
     <h3 id="under_post"><%=  markdown(filteredPosts[0].content[3,300]) %>...</h3>
+
     </div>
 
     <% end %>
