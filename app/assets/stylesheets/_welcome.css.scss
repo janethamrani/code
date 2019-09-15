@@ -642,25 +642,32 @@ hr{
       float: none;
       width: 100%;
       h3{
-        letter-spacing: normal;
-        font-size: 32px;
-        //margin-top: 10px;
-        margin-left: 5px;
-        line-height: 40px;
-        width: 95%;
-        text-align: left;
-        border: 0px;
-        color: black;
-        display: flex;
-        padding-top: 10px;
-        font-weight: lighter;
+        // letter-spacing: normal;
+        // font-size: 32px;
+        // //margin-top: 10px;
+        // margin-left: 5px;
+        // line-height: 40px;
+        // width: 95%;
+        // text-align: left;
+        // border: 0px;
+        // color: black;
+        // display: flex;
+        // padding-top: 10px;
+        // font-weight: lighter;
         a{
-          color: black;
-          width: 100%;
-          /* letter-spacing: 1px; */
-          line-height: 50px;
-          padding-top: 0;
-          //margin-top: -15px;
+          // color: black;
+          // width: 100%;
+          // /* letter-spacing: 1px; */
+          // line-height: 50px;
+          // padding-top: 0;
+          // //margin-top: -15px;
+          font-family: Playfair Display,serif;
+          font-size: 20px;
+          font-weight: 700;
+          word-spacing: normal;
+          letter-spacing: -.02em;
+          line-height: 1.3em;
+          text-transform: none;
         }
       }
       #under_post{
