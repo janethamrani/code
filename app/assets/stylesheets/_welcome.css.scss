@@ -532,22 +532,25 @@ hr{
     }
     .main_hdr {
       display: block;
-      margin: 0;
+      //margin: 0;
       color: black;
-      float: none;
+      margin-bottom: 0;
+      //float: none;
       width: 100%;
       h3{
         letter-spacing: normal;
+
             font-size: 32px;
             margin: 40px;
-            line-height: 40px;
-            width: 95%;
+            //line-height: 40px;
+            //width: 95%;
             text-align: left;
             font-family: 'Playfair Display';
             border: 0px;
             color: black;
-            display: flex;
-            padding-top: 10px;
+            //display: flex;
+            //padding-top: 10px;
+            height: auto;
             font-weight: 700;
         a{
           color: black;
