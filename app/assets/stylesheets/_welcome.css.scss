@@ -679,7 +679,7 @@ hr{
     padding-right: -10px;
     color: white;
     top: 65%;
-    left: 52%;
+    left: 83%;
     //margin-left: 30px;
     transform: translate(-90%, -95%);
   }
@@ -697,7 +697,10 @@ hr{
     }
     .main_hdr {
       display: block;
-      margin: 0;
+      //margin: 0;
+      margin-top: 35px;
+      margin-left: 20px;
+
       color: black;
       float: none;
       width: 100%;
@@ -741,13 +744,17 @@ hr{
         MARGIN-LEFT: 10px;
         /* display: none;*/
         p{
-          margin: 10px;
+          //margin: 10px;
+          //margin-right: 20px;
+          margin-left: 0;
+          margin-top: 0;
           margin-right: 20px;
           font-family: 'Roboto';
           letter-spacing: 2px;
           margin-bottom: 0;
-          margin-left: 4px;
-          padding-left: 10px;
+
+          //margin-left: 4px;
+          padding-left: 0px;
           text-transform: uppercase;
         }
 
@@ -758,6 +765,7 @@ hr{
 
   .flex--welcome{
     height: 90px;
+    margin-top: 0px;
     //padding-top: 50px;
     //margin-top: 440px;
     .section{
