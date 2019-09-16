@@ -516,6 +516,7 @@ hr{
     color: white;
     top: 65%;
     left: 52%;
+
     //margin-left: 30px;
     transform: translate(-90%, -95%);
   }
@@ -628,6 +629,38 @@ hr{
     }
 
 }
+@media (max-width: 800px) {
+  #img_overlay {
+    left: 60%;
+  }
+}
+@media (max-width: 742px) {
+  #img_overlay {
+    left: 65%;
+  }
+}
+@media (max-width: 600px) {
+  #img_overlay {
+    left: 70%;
+  }
+}
+@media (max-width: 500px) {
+  #img_overlay {
+    left: 75%;
+  }
+}
+@media (max-width: 375px) {
+  #img_overlay {
+    left: 90%;
+  }
+}
+@media (max-width: 320px) {
+  #img_overlay {
+    left: 95%;
+  }
+}
+
+
 //iphone x
 @media (max-width: 500px) {
   nav {
