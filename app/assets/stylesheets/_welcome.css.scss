@@ -800,3 +800,20 @@ hr{
     }
   }
 }
+//iphone x changes
+@media (max-width: 375px) {
+  .featured_img .main_hdr h3 a {
+    color: black;
+    width: 100%;
+    line-height: 37px;
+    font-size: 30px;
+    padding-top: 0px;
+}
+.featured_img .main_hdr .post_index_details {
+    color: black;
+    display: flex;
+    margin-top: 40px;
+    font-size: 10px;
+    MARGIN-LEFT: 10px;
+}
+}
