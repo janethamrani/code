@@ -539,7 +539,7 @@ hr{
       h3{
         letter-spacing: normal;
             font-size: 32px;
-            margin-left: 5px;
+            margin: 40px;
             line-height: 40px;
             width: 95%;
             text-align: left;
@@ -563,13 +563,11 @@ hr{
         padding-top: 50px;
       }
       .post_index_details{
-        /* position: absolute; */
-        /* top: 1000px; */
         color: black;
+        margin-top: 20px;
         display: flex;
-        margin-top: 40px;
-        MARGIN-LEFT: 10px;
-        /* display: none;*/
+        margin: 40px;
+
         p{
           margin: 10px;
           /* margin-left: -450px; */
