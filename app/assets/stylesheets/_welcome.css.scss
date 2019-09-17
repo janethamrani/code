@@ -821,13 +821,20 @@ hr{
     font-size: 30px;
     padding-top: 0px;
 }
-.featured_img .main_hdr .post_index_details {
-    color: black;
-    display: flex;
-    margin-top: 40px;
-    font-size: 10px;
-    MARGIN-LEFT: 10px;
-}
+  .featured_img {
+    .main_hdr {
+      .post_index_details {
+        p{
+          color: black;
+          display: flex;
+          margin-top: 40px;
+          font-size: 10px;
+          MARGIN-LEFT: 10px;
+
+        }
+      }
+    }
+  }
 }
 @media (max-width: 455px) {
   .featured_img .main_hdr .post_index_details p {
