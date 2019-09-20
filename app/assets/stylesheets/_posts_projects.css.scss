@@ -117,22 +117,31 @@
 //category show
 
 .whole_category{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  display: block;
   .articles-show{
     width: 100%;
+    display: block;
     .flex{
       display: flex;
       flex-direction: row;
       .container_show {
-          width: 80%;
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
           .whole_post{
             display: flex;
             flex-direction: row;
             align-items: center;
-            .container_image{
-                  width: 40%;
+            .container_image {
+              width: 50%;
+              display: block;
+              img {
+                border-style: none;
+                display: inline;
+                width: 100%;
+                height: auto;
+              }
             }
             .post_content {
               margin-left: auto;
@@ -147,17 +156,17 @@
                 width: 80%;
                 margin-left: auto;
                 margin-right: auto;
-              }
-              .post_index_details {
-                display: flex;
-                p {
+                a {
+                  text-decoration: none;
+                }
+              p {
                   text-align: center;
                   margin: 0;
                   font-size: 15px;
                   color: lightgray;
-                  font-family: "Pacifico";
+                  font-family: "Roboto";
                 }
-              }
+
             }
           }
       }
