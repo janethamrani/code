@@ -422,14 +422,7 @@ header{
 // }
 
 @media (max-width: 640px) {
-  .whole_category{
-    .articles-show{
-      .flex{
-        .container_show {
-          .articles-show {
-            width: 100%;
-
-            .whole_post {
+.whole_category .articles-show .flex .container_show .whole_post {
               display: flex;
               background-color: red;
               flex-direction: column;
