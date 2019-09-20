@@ -159,15 +159,19 @@
                 a {
                   text-decoration: none;
                 }
+
+              }
               p {
                   text-align: center;
                   margin: 0;
                   font-size: 15px;
                   color: lightgray;
-                  font-family: "Roboto";
+                  font-family: 'Roboto';
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+
                 }
 
-              }
             }
         }
       }
