@@ -422,30 +422,34 @@ header{
 // }
 
 @media (max-width: 640px) {
-.whole_category .articles-show .flex .container_show .whole_post {
-              display: flex;
-              background-color: red;
-              flex-direction: column;
-              margin-bottom: 50px;
-              .container_show {
-                width: 100%;
-                .container_image {
-                  height: 260px;
-                  width: 100%;
-                  margin-bottom: 5px;
-                }
-              }
-              .post_content {
-                margin-top: 10px;
-                margin-bottom: 10px;
-                width: 80%;
-                h2 {
-                  width: 100%;
-                  padding: 0;
-                }
-              }
-            }
-
+  .whole_category {
+    .articles-show {
+      width: 100%;
+      .whole_post {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        .container_show {
+          width: 100%;
+          .container_image {
+            height: 260px;
+            width: 100%;
+            margin-bottom: 5px;
+          }
+        }
+        .post_content {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          width: 80%;
+          h2 {
+            width: 100%;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 // - - - - Pagination
