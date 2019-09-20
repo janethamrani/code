@@ -133,6 +133,8 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            margin-top: 20px;
+
             .container_image {
               width: 50%;
               display: block;
@@ -158,6 +160,9 @@
                 margin-right: auto;
                 a {
                   text-decoration: none;
+                  font-family: 'Crimson Text', serif;
+                  font-weight: lighter;
+                  color: black;
                 }
 
               }
@@ -416,6 +421,7 @@ header{
 
 }
 
+
 // - - - - Pagination
 
 //fix colons
@@ -454,6 +460,33 @@ header{
     &:hover{
       color: #c0c0c0;
       background: $white;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .articles-show {
+    width: 100%;
+    .whole_post {
+      flex-direction: column;
+      margin-bottom: 50px;
+      .container_show {
+        width: 100%;
+        .container_image {
+          height: 260px;
+          width: 100%;
+          margin-bottom: 5px;
+        }
+      }
+      .post_content {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+        h2 {
+          width: 100%;
+          padding: 0;
+        }
+      }
     }
   }
 }
