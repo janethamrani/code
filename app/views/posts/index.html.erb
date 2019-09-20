@@ -12,9 +12,9 @@
                   <%= image_tag (post.thumbnail.url(:large))%>
                 </div>
                 <div class="post_content">
+                  <p class="post_date"><%= post.created_at.strftime('%A, %B %d') %></p>
                   <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
                   <div class="post_index_details">
-                    <p class="post_date"><%= post.created_at.strftime('%A, %B %d') %></p>
                     <p class="post_date">BY <%= post.user.full_name %></p>
                   </div>
                 </div>
