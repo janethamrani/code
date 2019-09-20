@@ -425,25 +425,28 @@ header{
   .whole_category {
     .articles-show {
       width: 100%;
-      .whole_post {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 50px;
-        .container_show {
-          width: 100%;
-          .container_image {
-            height: 260px;
+      .flex {
+        display: block;
+        .whole_post {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 50px;
+          .container_show {
             width: 100%;
-            margin-bottom: 5px;
+            .container_image {
+              height: 260px;
+              width: 100%;
+              margin-bottom: 5px;
+            }
           }
-        }
-        .post_content {
-          margin-top: 10px;
-          margin-bottom: 10px;
-          width: 80%;
-          h2 {
-            width: 100%;
-            padding: 0;
+          .post_content {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 80%;
+            h2 {
+              width: 100%;
+              padding: 0;
+            }
           }
         }
       }
