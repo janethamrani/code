@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   devise_scope :user do
   get 'login', to: 'devise/sessions#new'
   get 'signout', to: 'devise/sessions#destroy', as: :destroy_user_session_path
-  get "/sign_up" => "users#new", as: :new_user_path 
+  get "/sign_up" => "users#new", as: :new_user_path
   end
 
 
@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get "/pages/:page" => "pages#show"
   get 'welcome/index'
   get 'topic-help' => 'pages#topic'
+  get '/apply' => 'contacts#new'
 
 
   root 'welcome#index'
