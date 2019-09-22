@@ -84,30 +84,31 @@
 <div class="hr_color3">
 
 </div>
-
-
-<div class="whole_category">
-  <div class="articles-show">
-    <div class="flex">
-      <div class="container_show">
-        <% filteredPosts[4..-1].each do |post| %>
-            <div class="whole_post">
-                <div class="container_image">
-                  <%= image_tag (post.thumbnail.url(:large))%>
-                </div>
-                <div class="post_content">
-                  <p class="post_date"><%= post.created_at.strftime('%A, %B %d') %></p>
-                  <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
-                  <div class="post_index_details">
-                  <p class="post_date">BY <%= post.user.full_name %></p>
+<div class="welcome">
+  <div class="whole_category">
+    <div class="articles-show">
+      <div class="flex">
+        <div class="container_show">
+          <% filteredPosts[4..-1].each do |post| %>
+              <div class="whole_post">
+                  <div class="container_image">
+                    <%= image_tag (post.thumbnail.url(:large))%>
                   </div>
-                </div>
-           </div>
-          <% end %>
+                  <div class="post_content">
+                    <p class="post_date"><%= post.created_at.strftime('%A, %B %d') %></p>
+                    <h2><a href="#"> <%= link_to post.title, post %> </a></h2>
+                    <div class="post_index_details">
+                    <p class="post_date">BY <%= post.user.full_name %></p>
+                    </div>
+                  </div>
+             </div>
+            <% end %>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
 <!--
 <div class="recent_posts">
   <div id = "welcome_posts" class="skinny_wrapper posts_wrapper">
