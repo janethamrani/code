@@ -453,8 +453,11 @@ header{
 
 @media (max-width: 472px) {
   .posts-show-category {
-     font-size: 2rem;
-  }
+    #page_title{
+      font-size: 2rem;
+
+    }
+    }
 }
 // - - - - Pagination
 
