@@ -1,4 +1,6 @@
 <div id="posts_wrapper" class="skinny_wrapper">
+  <% if current_user.admin? %>
+
   <h1 id="form_title">Add User</h1>
 
   <%= form_for @user do |f| %>
@@ -27,6 +29,6 @@
     <br><%= f.submit %>
 
   <% end %>
-
+  <% end %>
   </div>
 </div>
