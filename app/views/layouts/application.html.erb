@@ -73,7 +73,7 @@
 
       <% if user_signed_in? %>
          <%= link_to "Dashboard", user_path(current_user) %>
-         <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+         <a class="link" href="/signout" id="sign_out">Log Out</a>
      <% else %>
          <a href="/apply">Apply</a>
          <a href="/login" id="login">Log In</a>
