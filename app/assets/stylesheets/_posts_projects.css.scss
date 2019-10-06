@@ -308,10 +308,15 @@ margin-right: auto;
   }
   #date_post {
     font-size: 15px;
-    margin: 0;
+    color: $light;
+    padding-top: 0;
+    font-family: 'Roboto';
+    letter-spacing: 2px;
   }
   .author{
     margin-left: 20px;
+    color: $light;
+
     padding-top: 0;
     font-family: 'Roboto';
     letter-spacing: 2px;
