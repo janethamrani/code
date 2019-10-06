@@ -278,13 +278,12 @@ header{
     position: relative;
     font-family: 'Open Sans', sans-serif;
     color: $highlight;
-    font-size: 30px;
-    width: auto;
+    font-size: 40px;
+    width: 80%;
     //margin-top: -40px;
     text-transform: capitalize;
-    //font-weight: bold;
-    //border: 3px solid #f1f1f1;
-    //z-index: 2;
+    margin-left: auto;
+margin-right: auto;
     padding: 20px;
   }
   .date_posts_show {
@@ -307,8 +306,15 @@ header{
     text-align: center;
 
   }
+  #date_post {
+    font-size: 15px;
+    margin: 0;
+  }
   .author{
     margin-left: 20px;
+    padding-top: 0;
+    font-family: 'Roboto';
+    letter-spacing: 2px;
   }
 }
 

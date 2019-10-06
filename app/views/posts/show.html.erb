@@ -2,10 +2,8 @@
 <header>
   <h1 class="post_title" id="post_show_title"><%= @post.title %></h1>
   <div class="date_posts_show">
-
   <p id="date_post"><%= @post.created_at.strftime("%A, %B %d") %></p>
-
-  <p class="author">By <%= @post.user.full_name %></p>
+  <p class="author">By <%=@post.user.full_name%></p>
 </div>
 
 <%= image_tag @post.thumbnail.url, :style => 'position: relative; width: 50%; height: auto;' %>
