@@ -271,26 +271,46 @@ header{
     color: gray;
   }
   h1{
-    background: rgba(255, 255, 255, 0.9);
+    //background: rgba(255, 255, 255, 0.9);
     text-align: center;
     text-decoration: none;
-    font-size: 5em;
+    font-size: 3em;
     position: relative;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', sans-serif;
     color: $highlight;
     font-size: 30px;
     width: auto;
-    margin-top: -40px;
+    //margin-top: -40px;
     text-transform: capitalize;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    z-index: 2;
+    //font-weight: bold;
+    //border: 3px solid #f1f1f1;
+    //z-index: 2;
     padding: 20px;
   }
-  .author {
-    font-family: 'Playfair Display', serif;
+  .date_posts_show {
+  display: flex;
+  /* flex-direction: row; */
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  color: #9a9da4;
+  width: 400px;
+  /* padding-right: 0; */
+  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  p {
+    color: $light;
+    text-align: center;
 
   }
+  .author{
+    margin-left: 20px;
+  }
+}
 
 }
 

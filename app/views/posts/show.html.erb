@@ -1,12 +1,14 @@
 
 <header>
-<%= image_tag @post.thumbnail.url, :style => 'position: relative; width: 100%; height: 300px; filter: blur(7px); ' %>
+  <h1 class="post_title" id="post_show_title"><%= @post.title %></h1>
+  <div class="date_posts_show">
 
-
-  <h1 class="post_title"><%= @post.title %></h1>
   <p id="date_post"><%= @post.created_at.strftime("%A, %B %d") %></p>
 
-  <p class="author" style="margin-right: 7px; font-size: 16px;">By <%= @post.user.full_name %></p>
+  <p class="author">By <%= @post.user.full_name %></p>
+</div>
+
+<%= image_tag @post.thumbnail.url, :style => 'position: relative; width: 50%; height: auto;' %>
 
 </header>
 
