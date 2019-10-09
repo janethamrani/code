@@ -270,6 +270,12 @@ header{
 
     color: gray;
   }
+  .show_thumbnail{
+    position: relative;
+    width: 50%;
+    height: auto;
+
+  }
   h1{
     //background: rgba(255, 255, 255, 0.9);
     text-align: center;
@@ -492,9 +498,11 @@ margin-right: auto;
     h1 {
       width: 100%;
     }
+
   #date_post, .author {
         font-size: 13px;
   }
+}
   #post_show_content{
     p > span > img{
       width: 100%;
