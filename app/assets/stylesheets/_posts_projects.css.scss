@@ -310,13 +310,14 @@ margin-right: auto;
     font-size: 15px;
     color: $light;
     padding-top: 0;
+    margin-left: auto;
     font-family: 'Roboto';
     letter-spacing: 2px;
   }
   .author{
     margin-left: 20px;
     color: $light;
-
+    margin-right: auto;
     padding-top: 0;
     font-family: 'Roboto';
     letter-spacing: 2px;
@@ -485,16 +486,23 @@ margin-right: auto;
 
 @media (max-width: 472px){
   header {
-    img {
+    .show_thumbnail {
       width: 100%;
     }
     h1 {
       width: 100%;
     }
+  #date_post, .author {
+        font-size: 13px;
   }
-  img {
-    width: 100%;
+  #post_show_content{
+    p > span > img{
+      width: 100%;
+      height: auto;
+    }
   }
+
+
 
 }
 
