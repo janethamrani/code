@@ -482,6 +482,23 @@ margin-right: auto;
   }
 }
 
+
+@media (max-width: 472px){
+  header {
+    .show_thumbnail {
+      width: 100%;
+    }
+    h1 {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+}
+
+
 @media (max-width: 472px) {
   .posts-show-category {
       #page_title{
