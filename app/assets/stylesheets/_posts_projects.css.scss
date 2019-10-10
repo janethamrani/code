@@ -504,9 +504,15 @@ margin-right: auto;
   }
 }
   #post_show_content{
-    p > span > img{
-      width: 100%;
-      height: auto;
+    p {
+      span {
+        img{
+          width: 100%;
+          height: auto;
+        }
+
+      }
+
     }
   }
 
