@@ -350,7 +350,16 @@ margin-right: auto;
     font-family: 'Crimson Text', serif;
     font-size: 20px;
     color: $dark;
-  //  letter-spacing: 1px;
+    #post_show_content{
+        span {
+          img{
+            width: 700px;
+            height: auto;
+          }
+
+        }
+
+      }
 
   }
 }
