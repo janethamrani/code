@@ -6,4 +6,10 @@ class WelcomeController < ApplicationController
 
 end
 
+def show
+  set_meta_tags title: 'Consonancie',
+                description: 'Your source for the latest humor, entertainment, trends, tips, and advice '
+end
+
+
 end
