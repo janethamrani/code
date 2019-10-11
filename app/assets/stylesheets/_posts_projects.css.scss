@@ -352,7 +352,7 @@ margin-right: auto;
     color: $dark;
         span {
           img{
-            width: 700px;
+            width: 50%;
             height: auto;
           }
 
@@ -470,6 +470,29 @@ margin-right: auto;
 // }
 //
 // }
+@media (max-width: 724px) {
+  #post_show_content{
+    p {
+      font-family: 'Crimson Text', serif;
+      font-size: 20px;
+      color: $dark;
+          span {
+            img{
+              width: 100%;
+              height: auto;
+            }
+
+          }
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+        }
+
+  }
+
+}
 
 @media (max-width: 640px) {
 
