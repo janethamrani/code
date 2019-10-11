@@ -470,6 +470,18 @@ margin-right: auto;
 // }
 //
 // }
+
+@media (max-width: 414px) {
+  header .date_posts_show {
+    width: 80%;
+    #date_post {
+      font-size: 10px;
+    }
+    .author{
+      font-size: 10px;
+    }
+  }
+}
 @media (max-width: 724px) {
   #post_show_content{
     p {
