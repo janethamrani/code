@@ -8,6 +8,6 @@
 Category.destroy_all
 
 Category.create(name: "Beauty")
-Category.create(name: "News")
+Category.create(name: "Rants")
 Category.create(name: "Entertainment")
 Category.create(name: "Lifestyle")
